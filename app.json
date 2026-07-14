@@ -18,7 +18,7 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.teachtotech.ecommercemobile"
+      "package": "com.fabrashion.app"
     },
     "web": {
       "output": "static",
@@ -56,9 +56,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "5b8a5083-23e3-4247-a55e-60b171ba3f57"
+        "projectId": "20060b62-69c6-4bae-9189-05648b75247e"
       }
     },
-    "owner": "teachtotech"
+    "owner": "fabrashion"
   }
 }
