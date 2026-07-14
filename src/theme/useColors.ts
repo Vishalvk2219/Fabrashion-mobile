@@ -1,14 +1,11 @@
-import { useColorScheme } from 'react-native';
-
 import { colors } from './colors';
 
 /**
- * Returns the semantic color tokens and subscribes the calling component to system
- * theme changes, so it re-renders when light/dark flips. Required on Android, where the
- * native `PlatformColor` values resolve on-device and React Compiler may otherwise
- * memoize the component. Prefer this over importing `colors` directly in components.
+ * Returns the ANDRÓ color tokens. The palette is now a FIXED light-only theme (see
+ * `plans/13-andro-redesign.md`), so there is no theme flip to subscribe to — this is a thin
+ * accessor kept so components can `const c = useColors()` uniformly. Prefer this over importing
+ * `colors` directly only for consistency; both are equivalent.
  */
 export function useColors() {
-  useColorScheme();
   return colors;
 }

@@ -1,4 +1,4 @@
-import { ActivityIndicator, StyleSheet, useColorScheme, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { colors } from '@/theme/colors';
 import { spacing } from '@/theme/tokens';
@@ -6,12 +6,11 @@ import { Text } from './text';
 
 /** Centered loading spinner with an optional label. Fills its parent. */
 export function Loader({ label }: { label?: string }) {
-  useColorScheme();
   return (
     <View style={styles.container}>
-      <ActivityIndicator color={colors.primary} />
+      <ActivityIndicator color={colors.label} />
       {label ? (
-        <Text variant="caption" muted>
+        <Text size={13} muted>
           {label}
         </Text>
       ) : null}
@@ -25,6 +24,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.md,
-    padding: spacing.xl,
+    padding: spacing.xxl,
+    backgroundColor: colors.background,
   },
 });

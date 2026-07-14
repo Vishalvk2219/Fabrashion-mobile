@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { fontFamily } from './typography';
 
 /** Spacing scale on a 4pt grid. Prefer flex `gap` over margins. */
 export const spacing = {
@@ -6,38 +6,49 @@ export const spacing = {
   sm: 8,
   md: 12,
   lg: 16,
-  xl: 24,
-  xxl: 32,
+  xl: 20,
+  xxl: 24,
+  xxxl: 32,
 } as const;
 
-/** Corner radii. Pair with `{ borderCurve: 'continuous' }` for iOS-style squircles. */
+/**
+ * Corner radii from the ANDRÓ design. Product imagery uses `card` (18px); pills/chips 12;
+ * CTAs 14–16; bottom sheets 28. Pair with `{ borderCurve: 'continuous' }` for iOS squircles.
+ */
 export const radii = {
-  sm: 8,
-  md: 12,
+  chip: 12,
+  sm: 12,
+  md: 14,
   lg: 16,
+  card: 18, // product image radius (design `--r`)
+  sheet: 28,
   pill: 999,
 } as const;
 
-/** Type scale (pt). Roughly maps to Apple HIG text styles. */
+/** Type sizes that recur in the design (pt). Text primitive also accepts arbitrary sizes. */
 export const fontSize = {
-  caption: 13,
-  footnote: 15,
-  body: 17,
-  headline: 17,
+  overline: 10,
+  micro: 11,
+  caption: 12,
+  footnote: 13,
+  body: 14,
+  callout: 15,
+  headline: 16,
   title3: 20,
   title2: 22,
-  title1: 28,
-  largeTitle: 34,
+  title1: 26,
+  display: 30,
+  displayLg: 34,
+  hero: 42,
 } as const;
 
-/** Platform system font families (SF on iOS, system on Android, font stacks on web). */
-export const fonts = Platform.select({
-  ios: { sans: 'system-ui', serif: 'ui-serif', rounded: 'ui-rounded', mono: 'ui-monospace' },
-  default: { sans: 'normal', serif: 'serif', rounded: 'normal', mono: 'monospace' },
-  web: {
-    sans: "Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-})!;
+/**
+ * Family aliases by role. Kept for back-compat with earlier code that referenced `fonts.sans`
+ * etc.; prefer importing `fontFamily`/`sansFamily`/`serifFamily` from `./typography`.
+ */
+export const fonts = {
+  sans: fontFamily.sans,
+  serif: fontFamily.serif,
+  rounded: fontFamily.sans,
+  mono: fontFamily.sans,
+} as const;

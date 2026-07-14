@@ -5,8 +5,8 @@
  */
 export const endpoints = {
   auth: {
-    register: '/auth/register',
-    login: '/auth/login',
+    otpRequest: '/auth/otp/request',
+    otpVerify: '/auth/otp/verify',
     refresh: '/auth/refresh',
     logout: '/auth/logout',
     me: '/auth/me',
@@ -16,6 +16,10 @@ export const endpoints = {
     list: '/products',
     detail: (id: string) => `/products/${id}`,
     availability: (id: string) => `/products/${id}/availability`,
+  },
+  addresses: {
+    root: '/addresses',
+    detail: (id: string) => `/addresses/${id}`,
   },
   cart: {
     root: '/cart',
@@ -27,6 +31,7 @@ export const endpoints = {
     list: '/orders',
     detail: (id: string) => `/orders/${id}`,
     cancel: (id: string) => `/orders/${id}/cancel`,
+    confirmDev: (id: string) => `/orders/${id}/confirm-dev`,
   },
   trials: {
     root: '/trials',
@@ -34,5 +39,22 @@ export const endpoints = {
     detail: (id: string) => `/trials/${id}`,
     outcome: (id: string) => `/trials/${id}/outcome`,
     cancel: (id: string) => `/trials/${id}/cancel`,
+    confirmDev: (id: string) => `/trials/${id}/confirm-dev`,
+  },
+  staff: {
+    summary: '/staff/summary',
+    inventory: '/staff/inventory',
+    adjust: (variantId: string) => `/staff/inventory/${variantId}`,
+    orders: '/staff/orders',
+    advance: (id: string) => `/staff/orders/${id}/advance`,
+    trials: '/staff/trials',
+    advanceTrial: (id: string) => `/staff/trials/${id}/advance`,
+  },
+  admin: {
+    overview: '/admin/overview',
+    staff: '/admin/staff',
+    catalog: '/admin/catalog',
+    products: '/admin/products',
+    orders: '/admin/orders',
   },
 } as const;

@@ -1,10 +1,13 @@
-import { StyleSheet, useColorScheme, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { spacing } from '@/theme/tokens';
+import { colors } from '@/theme/colors';
+import { radii, spacing } from '@/theme/tokens';
+import { glyphs, type IconName } from '@/theme/material-icons';
+import { Icon } from './icon';
 import { Text } from './text';
 
 type Props = {
-  /** A glyph/emoji shown above the title (renders cross-platform). */
+  /** A Material Symbol name (rendered in a circle) OR an emoji/glyph string (back-compat). */
   icon?: string;
   title: string;
   message?: string;
@@ -12,17 +15,25 @@ type Props = {
   action?: React.ReactNode;
 };
 
-/** Friendly empty/placeholder state for screens with no data yet. */
+/** ANDRÓ empty/placeholder state: iconed circle, serif title, muted body, optional CTA. */
 export function EmptyState({ icon, title, message, action }: Props) {
-  useColorScheme();
+  const isGlyph = !!icon && icon in glyphs;
   return (
     <View style={styles.container}>
-      {icon ? <Text style={styles.icon}>{icon}</Text> : null}
-      <Text variant="title" style={styles.center}>
+      {icon ? (
+        isGlyph ? (
+          <View style={styles.circle}>
+            <Icon name={icon as IconName} size={40} weight={300} color={colors.accent} />
+          </View>
+        ) : (
+          <Text style={styles.emoji}>{icon}</Text>
+        )
+      ) : null}
+      <Text serif weight="600" size={26} align="center">
         {title}
       </Text>
       {message ? (
-        <Text variant="body" muted style={styles.center}>
+        <Text muted size={14} align="center" style={styles.message}>
           {message}
         </Text>
       ) : null}
@@ -36,10 +47,20 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: spacing.sm,
-    padding: spacing.xl,
+    gap: spacing.md,
+    padding: spacing.xxl,
+    backgroundColor: colors.background,
   },
-  icon: { fontSize: 48, marginBottom: spacing.sm },
-  center: { textAlign: 'center' },
+  circle: {
+    width: 96,
+    height: 96,
+    borderRadius: radii.pill,
+    backgroundColor: colors.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.sm,
+  },
+  emoji: { fontSize: 48, marginBottom: spacing.sm },
+  message: { maxWidth: 280, lineHeight: 22 },
   action: { marginTop: spacing.lg, alignSelf: 'stretch' },
 });

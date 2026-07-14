@@ -32,3 +32,21 @@ export function discountPct(pricePaise: number, mrpPaise: number): number {
   if (mrpPaise <= 0 || pricePaise >= mrpPaise) return 0;
   return Math.round(((mrpPaise - pricePaise) / mrpPaise) * 100);
 }
+
+/** Indian compact notation for dashboard KPIs: `482000_00` → `"₹4.82L"`, crores → `"₹1.2Cr"`. */
+export function formatPaiseLakhs(paise: number): string {
+  const rupees = paise / 100;
+  const compact = (value: number) =>
+    value.toLocaleString('en-IN', { maximumFractionDigits: value >= 100 ? 0 : 2 });
+  if (rupees >= 1_00_00_000) return `₹${compact(rupees / 1_00_00_000)}Cr`;
+  if (rupees >= 1_00_000) return `₹${compact(rupees / 1_00_000)}L`;
+  return formatPaiseCompact(paise);
+}
+
+/** Basis points (server delta) → signed percent label, e.g. `1240` → `"+12.4%"`; null → `"—"`. */
+export function formatBps(bps: number | null): string {
+  if (bps === null) return '—';
+  const pct = bps / 100;
+  const sign = pct > 0 ? '+' : '';
+  return `${sign}${pct.toLocaleString('en-IN', { maximumFractionDigits: 1 })}%`;
+}

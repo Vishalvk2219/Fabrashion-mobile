@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="0e810f32-eb9c-489a-a618-93508fccc85f"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("572f4311-238f-45a8-b18c-d98c030382a1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("6332bb96-f7ed-4085-ad98-05e6693a55e4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("9eb6e628-0bd2-4293-9496-2b7d3f65e471") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3e5a1d4f-41c9-47c7-8ab4-74e82be6a728") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("06e3be9c-0615-458d-bdb8-1445428013fa") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("572f4311-238f-45a8-b18c-d98c030382a1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("6332bb96-f7ed-4085-ad98-05e6693a55e4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("9eb6e628-0bd2-4293-9496-2b7d3f65e471") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("3e5a1d4f-41c9-47c7-8ab4-74e82be6a728") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("06e3be9c-0615-458d-bdb8-1445428013fa") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("572f4311-238f-45a8-b18c-d98c030382a1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("6332bb96-f7ed-4085-ad98-05e6693a55e4") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("9eb6e628-0bd2-4293-9496-2b7d3f65e471") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("3e5a1d4f-41c9-47c7-8ab4-74e82be6a728") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("06e3be9c-0615-458d-bdb8-1445428013fa") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("670fa215-30ba-409a-a5d2-0313e6810e87") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("8f685f5c-36f8-4250-8447-1020606d3360") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("b003c3e9-5a25-441e-9c0e-306c1ab673bb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("5d812857-fa30-477d-b892-d9053fcb7827") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("e854d16a-a844-4c2e-8464-8da4221a4e0e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("4d2337b3-9b4c-491e-a400-876b3ff2da06") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("670fa215-30ba-409a-a5d2-0313e6810e87") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("8f685f5c-36f8-4250-8447-1020606d3360") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b003c3e9-5a25-441e-9c0e-306c1ab673bb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5d812857-fa30-477d-b892-d9053fcb7827") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e854d16a-a844-4c2e-8464-8da4221a4e0e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4d2337b3-9b4c-491e-a400-876b3ff2da06") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("670fa215-30ba-409a-a5d2-0313e6810e87") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("8f685f5c-36f8-4250-8447-1020606d3360") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b003c3e9-5a25-441e-9c0e-306c1ab673bb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("5d812857-fa30-477d-b892-d9053fcb7827") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e854d16a-a844-4c2e-8464-8da4221a4e0e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("4d2337b3-9b4c-491e-a400-876b3ff2da06") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("670fa215-30ba-409a-a5d2-0313e6810e87") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8f685f5c-36f8-4250-8447-1020606d3360") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b003c3e9-5a25-441e-9c0e-306c1ab673bb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("5d812857-fa30-477d-b892-d9053fcb7827") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e854d16a-a844-4c2e-8464-8da4221a4e0e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("4d2337b3-9b4c-491e-a400-876b3ff2da06") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("670fa215-30ba-409a-a5d2-0313e6810e87") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("8f685f5c-36f8-4250-8447-1020606d3360") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b003c3e9-5a25-441e-9c0e-306c1ab673bb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("5d812857-fa30-477d-b892-d9053fcb7827") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e854d16a-a844-4c2e-8464-8da4221a4e0e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("4d2337b3-9b4c-491e-a400-876b3ff2da06") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>/* fallback */
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("56e2bd26-e1c4-4c08-8a2d-176c96b012dc") format('woff2');
+}
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Manrope',sans-serif;background:#C7C3BA;background:radial-gradient(circle at 50% 30%,#D5D1C8,#B9B5AC)}
+::-webkit-scrollbar{width:0;height:0}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(.5);opacity:0}60%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+@keyframes ring{0%{transform:scale(.7);opacity:.6}100%{transform:scale(2.1);opacity:0}}
+@keyframes sheetUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px">
+<div ref="{{ frameRef }}" style="position:relative;width:390px;height:844px;background:#fff;border-radius:46px;overflow:hidden;box-shadow:0 40px 90px -20px rgba(30,26,18,.55),0 0 0 11px #14120E,0 0 0 13px #2b2822;--accent:#9C7A2C;--r:18px">
+
+<!-- ============ SPLASH ============ -->
+<sc-if value="{{ isSplash }}" hint-placeholder-val="{{ true }}">
+<div onclick="{{ goOnb }}" data-screen-label="Splash" style="position:absolute;inset:0;background:#14120E;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;overflow:hidden">
+  <div style="position:absolute;top:-60px;right:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(156,122,44,.22),transparent 70%)"></div>
+  <div style="position:absolute;bottom:-40px;left:-70px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(156,122,44,.14),transparent 70%)"></div>
+  <div style="animation:fadeUp 1s ease both;text-align:center">
+    <div style="width:60px;height:1px;background:var(--accent);margin:0 auto 26px"></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:58px;letter-spacing:.14em;color:#fff;padding-left:.14em">ANDRÓ</div>
+    <div style="font-size:11px;letter-spacing:.42em;color:var(--accent);text-transform:uppercase;margin-top:6px;padding-left:.42em">Maison de Mode</div>
+    <div style="width:60px;height:1px;background:var(--accent);margin:26px auto 0"></div>
+  </div>
+  <div style="position:absolute;bottom:64px;text-align:center;animation:fadeIn 1.4s ease both">
+    <div style="font-family:'Cormorant Garamond';font-style:italic;font-size:18px;color:#C9C3B6">Where wardrobes become collections.</div>
+    <div style="font-size:10px;letter-spacing:.3em;color:#6c675c;text-transform:uppercase;margin-top:20px">Tap to enter</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ ONBOARDING ============ -->
+<sc-if value="{{ isOnb }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Onboarding" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:56px 24px 0;display:flex;justify-content:flex-end">
+    <div onclick="{{ onbSkip }}" style="font-size:13px;color:#97938A;font-weight:600;cursor:pointer;letter-spacing:.04em">Skip</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 32px">
+    <div key="{{ onbTitle }}" style="width:230px;height:300px;border-radius:24px;background:#EDE9E1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;animation:fadeUp .45s ease both">
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.5),transparent)"></div>
+      <div style="width:96px;height:96px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -10px rgba(30,26,18,.25)">
+        <span style="font-family:'Material Symbols Rounded';font-size:44px;color:var(--accent);font-variation-settings:'wght' 300">{{ onbIcon }}</span>
+      </div>
+    </div>
+    <div key="{{ onbDesc }}" style="text-align:center;margin-top:44px;animation:fadeUp .5s ease both">
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:34px;color:#17150F;line-height:1.05">{{ onbTitle }}</div>
+      <div style="font-size:14px;line-height:1.6;color:#8A867C;margin-top:14px;max-width:270px">{{ onbDesc }}</div>
+    </div>
+  </div>
+  <div style="padding:0 32px 40px">
+    <div style="display:flex;gap:6px;justify-content:center;margin-bottom:28px">
+      <div style="width:{{ dw0 }};height:6px;border-radius:3px;background:{{ dc0 }};transition:all .3s"></div>
+      <div style="width:{{ dw1 }};height:6px;border-radius:3px;background:{{ dc1 }};transition:all .3s"></div>
+      <div style="width:{{ dw2 }};height:6px;border-radius:3px;background:{{ dc2 }};transition:all .3s"></div>
+      <div style="width:{{ dw3 }};height:6px;border-radius:3px;background:{{ dc3 }};transition:all .3s"></div>
+    </div>
+    <div onclick="{{ onbNext }}" style="background:#17150F;color:#fff;border-radius:16px;height:56px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;letter-spacing:.03em;cursor:pointer">{{ onbBtn }}</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ LOGIN ============ -->
+<sc-if value="{{ isLogin }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Login" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;padding:0 28px;animation:fadeIn .3s ease both">
+  <div style="padding-top:96px">
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:42px;letter-spacing:.1em;color:#17150F">ANDRÓ</div>
+    <div style="font-family:'Cormorant Garamond';font-size:26px;color:#17150F;margin-top:36px">Welcome back.</div>
+    <div style="font-size:14px;color:#8A867C;margin-top:8px;line-height:1.5">Sign in to continue to your curated world of fashion.</div>
+  </div>
+  <div style="margin-top:40px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Phone Number</div>
+    <div style="height:56px;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;padding:0 16px;gap:12px">
+      <span style="font-weight:600;color:#17150F;font-size:15px">🇮🇳 +91</span>
+      <div style="width:1px;height:22px;background:#E4E0D7"></div>
+      <span style="color:#17150F;font-size:16px;letter-spacing:.06em;font-weight:500">98765 43210</span>
+    </div>
+    <div onclick="{{ goOtp }}" style="background:#17150F;color:#fff;border-radius:16px;height:56px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;margin-top:20px;cursor:pointer;letter-spacing:.03em">Continue</div>
+    <div style="display:flex;align-items:center;gap:14px;margin:28px 0"><div style="flex:1;height:1px;background:#ECE8E0"></div><span style="font-size:11px;color:#B4AFA4;letter-spacing:.1em">OR</span><div style="flex:1;height:1px;background:#ECE8E0"></div></div>
+    <div onclick="{{ goOtp }}" style="height:54px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:14px;color:#17150F;cursor:pointer;margin-bottom:12px">
+      <span style="font-family:'Cormorant Garamond';font-weight:700;font-size:19px;color:#4285F4">G</span> Continue with Google</div>
+    <div onclick="{{ goOtp }}" style="height:54px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:14px;color:#17150F;cursor:pointer">
+      <span style="font-family:'Material Symbols Rounded';font-size:20px">phone_iphone</span> Continue with Apple</div>
+  </div>
+  <div style="margin-top:auto;padding-bottom:32px;text-align:center;font-size:11px;color:#B4AFA4;line-height:1.6">By continuing you agree to our<br><span style="color:#17150F;font-weight:600">Terms</span> &amp; <span style="color:#17150F;font-weight:600">Privacy Policy</span></div>
+</div>
+</sc-if>
+
+<!-- ============ OTP ============ -->
+<sc-if value="{{ isOtp }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="OTP Verification" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;padding:0 28px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goLogin }}" style="margin-top:56px;width:44px;height:44px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="margin-top:32px">
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:34px;color:#17150F">Verify your number</div>
+    <div style="font-size:14px;color:#8A867C;margin-top:10px;line-height:1.5">Enter the 5-digit code sent to<br><span style="color:#17150F;font-weight:600">+91 98765 43210</span></div>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:40px">
+    <div style="flex:1;aspect-ratio:1;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:600;color:#17150F">2</div>
+    <div style="flex:1;aspect-ratio:1;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:600;color:#17150F">4</div>
+    <div style="flex:1;aspect-ratio:1;border:1.5px solid var(--accent);border-radius:14px;display:flex;align-items:center;justify-content:center"><div style="width:2px;height:26px;background:var(--accent);animation:fadeIn .8s infinite alternate"></div></div>
+    <div style="flex:1;aspect-ratio:1;border:1.5px solid #ECE8E0;border-radius:14px"></div>
+    <div style="flex:1;aspect-ratio:1;border:1.5px solid #ECE8E0;border-radius:14px"></div>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:24px">
+    <span style="font-size:13px;color:#8A867C">Resend code in <span style="color:#17150F;font-weight:600">00:24</span></span>
+    <span style="font-size:13px;color:#B4AFA4;font-weight:600">Resend OTP</span>
+  </div>
+  <div onclick="{{ goHome }}" style="background:#17150F;color:#fff;border-radius:16px;height:56px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;margin-top:36px;cursor:pointer;letter-spacing:.03em">Verify &amp; Continue</div>
+</div>
+</sc-if>
+
+<!-- ============ HOME ============ -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Home" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:100px">
+    <div style="padding:54px 20px 6px;display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <div style="font-size:10px;letter-spacing:.16em;color:#B4AFA4;text-transform:uppercase">Deliver to</div>
+        <div style="display:flex;align-items:center;gap:3px;font-weight:600;font-size:15px;color:#17150F;margin-top:2px">Mumbai · 400001 <span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent)">expand_more</span></div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <div onclick="{{ goNotif }}" style="width:44px;height:44px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">notifications</span><div style="position:absolute;top:11px;right:12px;width:7px;height:7px;border-radius:50%;background:var(--accent);border:1.5px solid #fff"></div></div>
+        <div onclick="{{ goProfile }}" style="width:44px;height:44px;border-radius:50%;background:#DED7CB;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond';font-weight:600;color:#17150F;font-size:18px">A</div>
+      </div>
+    </div>
+    <div onclick="{{ goSearch }}" style="margin:14px 20px 4px;height:50px;border-radius:16px;background:#F5F2EC;display:flex;align-items:center;gap:10px;padding:0 16px;cursor:pointer">
+      <span style="font-family:'Material Symbols Rounded';font-size:22px;color:#97938A">search</span><span style="font-size:14px;color:#97938A">Search brands, styles, occasions…</span>
+    </div>
+
+    <div style="margin:16px 20px 4px;height:172px;border-radius:22px;background:#1C1A15;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:0 26px">
+      <div style="position:absolute;right:-30px;top:-30px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(156,122,44,.35),transparent 70%)"></div>
+      <div style="font-size:10px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase">The Autumn Edit</div>
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:30px;color:#fff;line-height:1.05;margin-top:8px">Up to 40% off<br>Premium Coats</div>
+      <div onclick="{{ goList }}" style="margin-top:14px;align-self:flex-start;background:#fff;color:#17150F;font-size:12px;font-weight:700;padding:9px 18px;border-radius:20px;cursor:pointer;letter-spacing:.03em">Shop the Edit</div>
+    </div>
+
+    <div style="display:flex;gap:18px;overflow-x:auto;padding:22px 20px 6px">
+      <sc-for list="{{ cats }}" as="c" hint-placeholder-count="6">
+        <div onclick="{{ c.onClick }}" style="flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;width:62px">
+          <div style="width:62px;height:62px;border-radius:50%;background:{{ c.tone }};display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:26px;color:#17150F;font-variation-settings:'wght' 300">{{ c.ic }}</span></div>
+          <span style="font-size:11px;color:#57534B;font-weight:500;text-align:center">{{ c.n }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:18px 20px 12px">
+      <div style="font-family:'Cormorant Garamond';font-size:26px;font-weight:600;color:#17150F">New Arrivals</div>
+      <div onclick="{{ goList }}" style="font-size:11px;color:var(--accent);font-weight:700;letter-spacing:.08em">SEE ALL</div>
+    </div>
+    <div style="display:flex;gap:14px;overflow-x:auto;padding:0 20px 4px">
+      <sc-for list="{{ newArrivals }}" as="p" hint-placeholder-count="4">
+        <div onclick="{{ p.onOpen }}" style="flex:0 0 auto;width:152px;cursor:pointer">
+          <div style="position:relative;width:152px;height:200px;border-radius:var(--r);background:{{ p.tone }};overflow:hidden">
+            <div style="position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.4),transparent 60%)"></div>
+            <div onclick="{{ p.onWish }}" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:{{ p.wcolor }};font-variation-settings:'FILL' {{ p.wfill }}">favorite</span></div>
+          </div>
+          <div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase;margin-top:8px">{{ p.b }}</div>
+          <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span style="font-weight:700;font-size:13px;color:#17150F">{{ p.pf }}</span><span style="font-size:10px;color:var(--accent);font-weight:700">{{ p.offt }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div onclick="{{ goList }}" style="margin:24px 20px;height:150px;border-radius:22px;background:#EDE9E1;position:relative;overflow:hidden;display:flex;align-items:center;padding:0 28px;cursor:pointer">
+      <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:#DED7CB"></div>
+      <div style="position:relative">
+        <div style="font-size:10px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase">Premium Collection</div>
+        <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:26px;color:#17150F;line-height:1.1;margin-top:6px">The Atelier<br>Series</div>
+        <div style="font-size:12px;color:#8A867C;margin-top:8px;font-weight:500">Explore →</div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:0 20px 12px">
+      <div style="font-family:'Cormorant Garamond';font-size:26px;font-weight:600;color:#17150F">Trending Now</div>
+      <div onclick="{{ goList }}" style="font-size:11px;color:var(--accent);font-weight:700;letter-spacing:.08em">SEE ALL</div>
+    </div>
+    <div style="display:flex;gap:14px;overflow-x:auto;padding:0 20px 4px">
+      <sc-for list="{{ trending }}" as="p" hint-placeholder-count="4">
+        <div onclick="{{ p.onOpen }}" style="flex:0 0 auto;width:152px;cursor:pointer">
+          <div style="position:relative;width:152px;height:200px;border-radius:var(--r);background:{{ p.tone }};overflow:hidden">
+            <div style="position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.4),transparent 60%)"></div>
+            <div onclick="{{ p.onWish }}" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:{{ p.wcolor }};font-variation-settings:'FILL' {{ p.wfill }}">favorite</span></div>
+          </div>
+          <div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase;margin-top:8px">{{ p.b }}</div>
+          <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span style="font-weight:700;font-size:13px;color:#17150F">{{ p.pf }}</span><span style="font-size:10px;color:#B8B3A8;text-decoration:line-through">{{ p.mf }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:24px 20px 14px">
+      <div style="font-family:'Cormorant Garamond';font-size:26px;font-weight:600;color:#17150F">Recommended</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:0 20px">
+      <sc-for list="{{ recommended }}" as="p" hint-placeholder-count="4">
+        <div onclick="{{ p.onOpen }}" style="cursor:pointer">
+          <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--r);background:{{ p.tone }};overflow:hidden">
+            <div style="position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.4),transparent 60%)"></div>
+            <div onclick="{{ p.onWish }}" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:{{ p.wcolor }};font-variation-settings:'FILL' {{ p.wfill }}">favorite</span></div>
+            <div style="position:absolute;bottom:0;left:0;background:#17150F;color:#fff;font-size:9px;font-weight:700;padding:4px 8px;border-radius:0 8px 0 0;letter-spacing:.04em">{{ p.offt }}</div>
+          </div>
+          <div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase;margin-top:8px">{{ p.b }}</div>
+          <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span style="font-weight:700;font-size:13px;color:#17150F">{{ p.pf }}</span><span style="font-size:10px;color:#B8B3A8;text-decoration:line-through">{{ p.mf }}</span></div>
+          <div style="display:flex;align-items:center;gap:3px;margin-top:5px"><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-size:11px;color:#57534B;font-weight:600">{{ p.rt }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:26px 20px 12px">
+      <div style="font-family:'Cormorant Garamond';font-size:26px;font-weight:600;color:#17150F">Recently Viewed</div>
+    </div>
+    <div style="display:flex;gap:14px;overflow-x:auto;padding:0 20px 4px">
+      <sc-for list="{{ recent }}" as="p" hint-placeholder-count="4">
+        <div onclick="{{ p.onOpen }}" style="flex:0 0 auto;width:120px;cursor:pointer">
+          <div style="width:120px;height:150px;border-radius:14px;background:{{ p.tone }}"></div>
+          <div style="font-size:12px;font-weight:600;color:#17150F;margin-top:6px">{{ p.n }}</div>
+          <div style="font-size:12px;font-weight:700;color:#17150F;margin-top:1px">{{ p.pf }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ CATEGORIES ============ -->
+<sc-if value="{{ isCat }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Categories" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:100px">
+    <div style="padding:56px 20px 8px"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:32px;color:#17150F">Categories</div></div>
+    <div onclick="{{ goSearch }}" style="margin:8px 20px 16px;height:48px;border-radius:14px;background:#F5F2EC;display:flex;align-items:center;gap:10px;padding:0 16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#97938A">search</span><span style="font-size:13px;color:#97938A">Search categories</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 20px">
+      <sc-for list="{{ cats }}" as="c" hint-placeholder-count="8">
+        <div onclick="{{ c.onClick }}" style="border-radius:var(--r);background:{{ c.tone }};padding:18px;height:130px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;position:relative;overflow:hidden">
+          <div style="position:absolute;right:-14px;bottom:-14px;width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.4)"></div>
+          <span style="font-family:'Material Symbols Rounded';font-size:30px;color:#17150F;font-variation-settings:'wght' 300;position:relative">{{ c.ic }}</span>
+          <div style="position:relative"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:20px;color:#17150F">{{ c.n }}</div><div style="font-size:11px;color:#8A867C;margin-top:1px">{{ c.c }}</div></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ PRODUCT LISTING ============ -->
+<sc-if value="{{ isList }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Product Listing" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 8px;display:flex;align-items:center;gap:8px">
+    <div onclick="{{ goHome }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="flex:1"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F;line-height:1">Women · Dresses</div><div style="font-size:11px;color:#97938A;margin-top:2px">248 items</div></div>
+    <div onclick="{{ goSearch }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">search</span></div>
+  </div>
+  <div style="display:flex;gap:10px;padding:10px 16px 12px;overflow-x:auto;border-bottom:1px solid #F0ECE4">
+    <div onclick="{{ openFilters }}" style="flex:0 0 auto;display:flex;align-items:center;gap:6px;height:38px;padding:0 16px;border-radius:20px;background:#17150F;color:#fff;font-size:12px;font-weight:600;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:17px">tune</span>Filters</div>
+    <div style="flex:0 0 auto;display:flex;align-items:center;gap:5px;height:38px;padding:0 14px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600"><span style="font-family:'Material Symbols Rounded';font-size:16px">swap_vert</span>Popular</div>
+    <div style="flex:0 0 auto;height:38px;padding:0 14px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600;display:flex;align-items:center">Size</div>
+    <div style="flex:0 0 auto;height:38px;padding:0 14px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600;display:flex;align-items:center">Colour</div>
+    <div style="flex:0 0 auto;height:38px;padding:0 14px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600;display:flex;align-items:center">Price</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <sc-for list="{{ products }}" as="p" hint-placeholder-count="8">
+        <div onclick="{{ p.onOpen }}" style="cursor:pointer">
+          <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--r);background:{{ p.tone }};overflow:hidden">
+            <div style="position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.4),transparent 60%)"></div>
+            <div onclick="{{ p.onWish }}" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:{{ p.wcolor }};font-variation-settings:'FILL' {{ p.wfill }}">favorite</span></div>
+            <div style="position:absolute;bottom:0;left:0;background:#17150F;color:#fff;font-size:9px;font-weight:700;padding:4px 8px;border-radius:0 8px 0 0">{{ p.offt }}</div>
+          </div>
+          <div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase;margin-top:8px">{{ p.b }}</div>
+          <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span style="font-weight:700;font-size:13px;color:#17150F">{{ p.pf }}</span><span style="font-size:10px;color:#B8B3A8;text-decoration:line-through">{{ p.mf }}</span></div>
+          <div style="display:flex;align-items:center;gap:3px;margin-top:5px"><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-size:11px;color:#57534B;font-weight:600">{{ p.rt }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ PRODUCT DETAILS ============ -->
+<sc-if value="{{ isPdp }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Product Details" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:96px">
+    <div style="position:relative">
+      <div style="width:100%;height:460px;background:{{ pdpMain }};position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;background:linear-gradient(150deg,rgba(255,255,255,.45),transparent 55%)"></div>
+        <div style="position:absolute;bottom:14px;right:14px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">zoom_in</span></div>
+      </div>
+      <div style="position:absolute;top:52px;left:16px;right:16px;display:flex;justify-content:space-between">
+        <div onclick="{{ goList }}" style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+        <div style="display:flex;gap:8px"><div style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">ios_share</span></div><div onclick="{{ goWish }}" style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">favorite_border</span></div></div>
+      </div>
+      <div style="position:absolute;bottom:14px;left:16px;display:flex;gap:8px">
+        <sc-for list="{{ pdpThumbs }}" as="t" hint-placeholder-count="4"><div onclick="{{ t.onClick }}" style="width:46px;height:58px;border-radius:8px;background:{{ t.tone }};border:{{ t.br }};cursor:pointer"></div></sc-for>
+      </div>
+    </div>
+    <div style="padding:18px 20px 0">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="font-size:10px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;font-weight:600">{{ pdp.b }}</div>
+        <div style="display:flex;align-items:center;gap:4px;background:#F5F2EC;padding:4px 10px;border-radius:12px"><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-size:12px;font-weight:700;color:#17150F">{{ pdp.rt }}</span><span style="font-size:11px;color:#97938A">(214)</span></div>
+      </div>
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:30px;color:#17150F;margin-top:6px;line-height:1.05">{{ pdp.n }}</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:10px"><span style="font-size:22px;font-weight:700;color:#17150F">{{ pdp.pf }}</span><span style="font-size:14px;color:#B8B3A8;text-decoration:line-through">{{ pdp.mf }}</span><span style="font-size:12px;color:var(--accent);font-weight:700">{{ pdp.offt }}</span></div>
+      <div style="font-size:11px;color:#8A867C;margin-top:4px">Inclusive of all taxes</div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:22px"><div style="font-size:13px;font-weight:700;color:#17150F">Colour</div></div>
+      <div style="display:flex;gap:14px;margin-top:12px">
+        <sc-for list="{{ pdpColors }}" as="c" hint-placeholder-count="4"><div onclick="{{ c.onClick }}" style="width:32px;height:32px;border-radius:50%;background:{{ c.t }};box-shadow:{{ c.ring }};cursor:pointer"></div></sc-for>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:22px"><div style="font-size:13px;font-weight:700;color:#17150F">Select Size</div><div style="font-size:12px;color:var(--accent);font-weight:600">Size Guide</div></div>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <sc-for list="{{ pdpSizes }}" as="z" hint-placeholder-count="5"><div onclick="{{ z.onClick }}" style="width:48px;height:48px;border-radius:12px;background:{{ z.bg }};color:{{ z.col }};border:1.5px solid {{ z.bd }};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;cursor:pointer">{{ z.l }}</div></sc-for>
+      </div>
+
+      <div style="margin-top:24px;padding:16px;border:1px solid #F0ECE4;border-radius:16px;display:flex;gap:12px;align-items:center">
+        <span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">local_shipping</span>
+        <div><div style="font-size:13px;font-weight:600;color:#17150F">Delivery by Mon, 8 Jul</div><div style="font-size:11px;color:#8A867C;margin-top:1px">Free delivery · Easy 15-day returns</div></div>
+      </div>
+      <div style="margin-top:12px;padding:16px;border:1px solid #F0ECE4;border-radius:16px;display:flex;gap:12px;align-items:center">
+        <span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">storefront</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Available at 3 stores near you</div><div style="font-size:11px;color:#8A867C;margin-top:1px">Bandra · Lower Parel · Colaba</div></div>
+        <span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span>
+      </div>
+
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F;margin-top:28px">Details</div>
+      <div style="font-size:13px;line-height:1.7;color:#57534B;margin-top:8px">A fluid silk-blend wrap dress cut for a flattering drape, finished with a self-tie waist and a subtle side slit. An elevated staple for evening and occasion.</div>
+      <div style="display:flex;gap:24px;margin-top:16px">
+        <div><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#97938A">Material</div><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:3px">92% Silk, 8% Elastane</div></div>
+        <div><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#97938A">Care</div><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:3px">Dry clean only</div></div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:28px"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F">Reviews</div><div onclick="{{ goReviews }}" style="font-size:12px;color:var(--accent);font-weight:600;cursor:pointer">View all 214</div></div>
+      <div style="display:flex;gap:16px;align-items:center;margin-top:14px;padding:16px;background:#FAF8F3;border-radius:16px">
+        <div style="text-align:center"><div style="font-family:'Cormorant Garamond';font-weight:700;font-size:40px;color:#17150F;line-height:1">4.8</div><div style="display:flex;gap:2px;justify-content:center;margin-top:2px"><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:13px;color:var(--accent);font-variation-settings:'FILL' 1">star</span></div><div style="font-size:10px;color:#8A867C;margin-top:4px">214 reviews</div></div>
+        <div style="flex:1">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:10px;color:#8A867C;width:8px">5</span><div style="flex:1;height:5px;background:#ECE8E0;border-radius:3px"><div style="width:82%;height:5px;background:var(--accent);border-radius:3px"></div></div></div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:10px;color:#8A867C;width:8px">4</span><div style="flex:1;height:5px;background:#ECE8E0;border-radius:3px"><div style="width:12%;height:5px;background:var(--accent);border-radius:3px"></div></div></div>
+          <div style="display:flex;align-items:center;gap:8px"><span style="font-size:10px;color:#8A867C;width:8px">3</span><div style="flex:1;height:5px;background:#ECE8E0;border-radius:3px"><div style="width:6%;height:5px;background:var(--accent);border-radius:3px"></div></div></div>
+        </div>
+      </div>
+      <div style="margin-top:14px;padding-bottom:14px;border-bottom:1px solid #F0ECE4">
+        <div style="display:flex;align-items:center;gap:8px"><div style="width:28px;height:28px;border-radius:50%;background:#DED7CB;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#17150F">R</div><span style="font-size:13px;font-weight:600;color:#17150F">Riya S.</span><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1;margin-left:auto">star</span><span style="font-size:12px;font-weight:700;color:#17150F">5.0</span></div>
+        <div style="font-size:12px;line-height:1.6;color:#57534B;margin-top:8px">Exquisite fabric and the fit is perfect. The Try at Home service made choosing the right size effortless.</div>
+      </div>
+
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F;margin-top:26px;margin-bottom:14px">You May Also Like</div>
+      <div style="display:flex;gap:14px;overflow-x:auto;margin:0 -20px;padding:0 20px 4px">
+        <sc-for list="{{ similar }}" as="p" hint-placeholder-count="4"><div onclick="{{ p.onOpen }}" style="flex:0 0 auto;width:130px;cursor:pointer"><div style="width:130px;height:170px;border-radius:14px;background:{{ p.tone }}"></div><div style="font-size:12px;font-weight:600;color:#17150F;margin-top:6px">{{ p.n }}</div><div style="font-size:12px;font-weight:700;color:#17150F">{{ p.pf }}</div></div></sc-for>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #F0ECE4;background:#fff;padding:12px 16px 22px;display:flex;gap:10px">
+    <div onclick="{{ goTry }}" style="flex:0 0 auto;width:76px;height:54px;border:1.5px solid #17150F;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">checkroom</span><span style="font-size:9px;font-weight:700;color:#17150F">Try Home</span></div>
+    <div onclick="{{ goCart }}" style="flex:1;height:54px;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:#17150F;cursor:pointer">Add to Cart</div>
+    <div onclick="{{ goCheckout }}" style="flex:1;height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;cursor:pointer">Buy Now</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ TRY AT HOME ============ -->
+<sc-if value="{{ isTry }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Try at Home" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:96px">
+    <div style="padding:52px 16px 8px;display:flex;align-items:center;gap:8px;background:#fff">
+      <div onclick="{{ goPdp }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Try at Home</div>
+    </div>
+    <div style="padding:16px 20px 0">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><div style="font-size:13px;font-weight:700;color:#17150F">Selected Pieces</div><div style="font-size:12px;color:#8A867C">2 of 10 selected</div></div>
+      <sc-for list="{{ tryItems }}" as="p" hint-placeholder-count="2">
+        <div style="display:flex;gap:12px;background:#fff;border-radius:16px;padding:12px;margin-bottom:10px">
+          <div style="width:56px;height:70px;border-radius:10px;background:{{ p.tone }}"></div>
+          <div style="flex:1"><div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase">{{ p.b }}</div><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div><div style="font-size:12px;color:#8A867C;margin-top:4px">Size M · Charcoal</div></div>
+          <span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">close</span>
+        </div>
+      </sc-for>
+      <div onclick="{{ goList }}" style="border:1.5px dashed #D8D2C6;border-radius:16px;padding:14px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;margin-bottom:20px"><span style="font-family:'Material Symbols Rounded';font-size:20px">add</span>Add more pieces</div>
+
+      <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Delivery Address</div>
+      <div style="background:#fff;border-radius:16px;padding:16px;display:flex;gap:12px;align-items:flex-start;margin-bottom:20px">
+        <span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">home</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Home · Ananya Rao</div><div style="font-size:12px;color:#8A867C;line-height:1.5;margin-top:3px">402, Sea Breeze Apartments, Bandra West, Mumbai 400050</div></div>
+        <span onclick="{{ goAddresses }}" style="font-size:12px;color:var(--accent);font-weight:600;cursor:pointer">Change</span>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Select Date</div>
+      <div style="display:flex;gap:10px;margin-bottom:20px">
+        <sc-for list="{{ tryDates }}" as="d" hint-placeholder-count="4"><div onclick="{{ d.onClick }}" style="flex:1;padding:12px 0;border-radius:14px;background:{{ d.bg }};border:1.5px solid {{ d.bd }};text-align:center;cursor:pointer"><div style="font-size:11px;color:{{ d.col }};font-weight:600">{{ d.l }}</div><div style="font-size:18px;font-weight:700;color:{{ d.col }};margin-top:2px">{{ d.d }}</div></div></sc-for>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Time Slot</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px">
+        <sc-for list="{{ trySlots }}" as="t" hint-placeholder-count="5"><div onclick="{{ t.onClick }}" style="padding:10px 16px;border-radius:12px;background:{{ t.bg }};border:1.5px solid {{ t.bd }};color:{{ t.col }};font-size:12px;font-weight:600;cursor:pointer">{{ t.l }}</div></sc-for>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Instructions (optional)</div>
+      <div style="background:#fff;border-radius:16px;padding:14px;font-size:12px;color:#B4AFA4;min-height:64px;margin-bottom:20px">Add a note for our stylist…</div>
+
+      <div style="background:#fff;border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:10px"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">info</span><div style="font-size:13px;color:#57534B">Refundable booking fee</div></div>
+        <div style="font-size:16px;font-weight:700;color:#17150F">₹499</div>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #F0ECE4;background:#fff;padding:12px 16px 22px">
+    <div onclick="{{ goSuccess }}" style="height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer">Confirm Booking · ₹499</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ CART ============ -->
+<sc-if value="{{ isCart }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Cart" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goHome }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Shopping Bag</div>
+    <div style="margin-left:auto;font-size:13px;color:#8A867C">{{ cartCount }} items</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 20px">
+    <sc-for list="{{ cartItems }}" as="p" hint-placeholder-count="3">
+      <div style="display:flex;gap:12px;background:#fff;border-radius:18px;padding:12px;margin-bottom:12px">
+        <div style="width:70px;height:90px;border-radius:12px;background:{{ p.tone }}"></div>
+        <div style="flex:1">
+          <div style="display:flex;justify-content:space-between"><div style="font-size:9px;letter-spacing:.1em;color:#B4AFA4;text-transform:uppercase">{{ p.b }}</div><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#C4BFB4">delete</span></div>
+          <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:2px">{{ p.n }}</div>
+          <div style="font-size:11px;color:#8A867C;margin-top:3px">Size M · Charcoal</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px">
+            <div style="display:flex;align-items:center;gap:12px;border:1.5px solid #ECE8E0;border-radius:10px;padding:5px 10px">
+              <span onclick="{{ p.dec }}" style="font-family:'Material Symbols Rounded';font-size:18px;color:#17150F;cursor:pointer">remove</span>
+              <span style="font-size:13px;font-weight:700;color:#17150F;min-width:14px;text-align:center">{{ p.q }}</span>
+              <span onclick="{{ p.inc }}" style="font-family:'Material Symbols Rounded';font-size:18px;color:#17150F;cursor:pointer">add</span>
+            </div>
+            <div style="font-size:15px;font-weight:700;color:#17150F">{{ p.lt }}</div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+    <div onclick="{{ goCoupons }}" style="background:#fff;border-radius:16px;padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:14px;cursor:pointer">
+      <span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">sell</span>
+      <span style="flex:1;font-size:13px;color:#8A867C">Apply coupon code</span>
+      <span style="font-size:12px;color:var(--accent);font-weight:700">VIEW ALL</span>
+    </div>
+    <div style="background:#fff;border-radius:18px;padding:18px">
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19px;color:#17150F;margin-bottom:14px">Price Details</div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:10px"><span>Subtotal</span><span style="font-weight:600;color:#17150F">{{ subtotal }}</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:10px"><span>Discount</span><span style="font-weight:600;color:var(--accent)">– {{ saved }}</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:12px"><span>Delivery</span><span style="font-weight:600;color:#17150F">{{ delivery }}</span></div>
+      <div style="border-top:1px solid #F0ECE4;padding-top:12px;display:flex;justify-content:space-between;align-items:center"><span style="font-size:15px;font-weight:700;color:#17150F">Total</span><span style="font-size:20px;font-weight:700;color:#17150F">{{ total }}</span></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #F0ECE4;background:#fff;padding:12px 16px 22px;display:flex;align-items:center;gap:14px">
+    <div><div style="font-size:11px;color:#8A867C">Total</div><div style="font-size:18px;font-weight:700;color:#17150F">{{ total }}</div></div>
+    <div onclick="{{ goCheckout }}" style="flex:1;height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer">Checkout</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ CHECKOUT ============ -->
+<sc-if value="{{ isCheckout }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Checkout" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goCart }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Checkout</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 20px">
+    <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:10px">Delivery Address</div>
+    <div style="background:#fff;border-radius:16px;padding:16px;display:flex;gap:12px;margin-bottom:20px">
+      <span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">home</span>
+      <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Home · Ananya Rao</div><div style="font-size:12px;color:#8A867C;line-height:1.5;margin-top:3px">402, Sea Breeze Apartments, Bandra West, Mumbai 400050</div></div>
+      <span onclick="{{ goAddresses }}" style="font-size:12px;color:var(--accent);font-weight:600;cursor:pointer">Change</span>
+    </div>
+    <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:10px">Payment Method</div>
+    <sc-for list="{{ pays }}" as="m" hint-placeholder-count="4">
+      <div onclick="{{ m.onClick }}" style="background:#fff;border:1.5px solid {{ m.bd }};border-radius:16px;padding:14px;display:flex;gap:12px;align-items:center;margin-bottom:10px;cursor:pointer">
+        <span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">{{ m.ic }}</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">{{ m.t }}</div><div style="font-size:11px;color:#8A867C;margin-top:1px">{{ m.d }}</div></div>
+        <span style="font-family:'Material Symbols Rounded';font-size:22px;color:{{ m.dcol }};font-variation-settings:'FILL' 1">{{ m.dot }}</span>
+      </div>
+    </sc-for>
+    <div style="background:#fff;border-radius:18px;padding:18px;margin-top:12px">
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19px;color:#17150F;margin-bottom:14px">Order Summary</div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:10px"><span>Subtotal</span><span style="font-weight:600;color:#17150F">{{ subtotal }}</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:10px"><span>Discount</span><span style="font-weight:600;color:var(--accent)">– {{ saved }}</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#57534B;margin-bottom:12px"><span>Delivery</span><span style="font-weight:600;color:#17150F">{{ delivery }}</span></div>
+      <div style="border-top:1px solid #F0ECE4;padding-top:12px;display:flex;justify-content:space-between;align-items:center"><span style="font-size:15px;font-weight:700;color:#17150F">Total Payable</span><span style="font-size:20px;font-weight:700;color:#17150F">{{ total }}</span></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #F0ECE4;background:#fff;padding:12px 16px 22px">
+    <div onclick="{{ goSuccess }}" style="height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px">lock</span>Place Order · {{ total }}</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ PAYMENT SUCCESS ============ -->
+<sc-if value="{{ isSuccess }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Payment Success" style="position:absolute;inset:0;background:#14120E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 36px;animation:fadeIn .3s ease both">
+  <div style="position:relative;width:120px;height:120px;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;width:120px;height:120px;border-radius:50%;border:1px solid var(--accent);animation:ring 1.6s ease-out infinite"></div>
+    <div style="position:absolute;width:120px;height:120px;border-radius:50%;border:1px solid var(--accent);animation:ring 1.6s ease-out infinite .5s"></div>
+    <div style="width:96px;height:96px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both"><span style="font-family:'Material Symbols Rounded';font-size:52px;color:#fff;font-variation-settings:'wght' 400">check</span></div>
+  </div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:34px;color:#fff;margin-top:36px;animation:fadeUp .5s ease .2s both">Order Confirmed</div>
+  <div style="font-size:14px;color:#C9C3B6;text-align:center;line-height:1.6;margin-top:12px;animation:fadeUp .5s ease .3s both">Thank you, Ananya. Your pieces are being<br>prepared with care.</div>
+  <div style="margin-top:24px;padding:12px 22px;border:1px solid #3a352c;border-radius:14px;animation:fadeUp .5s ease .4s both"><span style="font-size:11px;color:#8b8578;letter-spacing:.1em">ORDER</span> <span style="font-size:14px;font-weight:700;color:#fff;letter-spacing:.04em">#ANDRO-48213</span></div>
+  <div style="position:absolute;bottom:40px;left:36px;right:36px;animation:fadeUp .5s ease .5s both">
+    <div onclick="{{ goTrack }}" style="height:54px;background:var(--accent);color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer;margin-bottom:12px">Track Order</div>
+    <div onclick="{{ goHome }}" style="height:54px;border:1px solid #3a352c;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer">Continue Shopping</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ WISHLIST ============ -->
+<sc-if value="{{ isWish }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Wishlist" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:56px 20px 8px"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:32px;color:#17150F">Wishlist</div><div style="font-size:12px;color:#97938A;margin-top:2px">{{ wishCount }} saved pieces</div></div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 100px">
+    <sc-if value="{{ wishEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:60vh;text-align:center">
+        <div style="width:96px;height:96px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:44px;color:var(--accent);font-variation-settings:'wght' 200">favorite</span></div>
+        <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F;margin-top:24px">Your wishlist awaits</div>
+        <div style="font-size:13px;color:#8A867C;margin-top:8px;max-width:230px;line-height:1.6">Tap the heart on any piece to save it here for later.</div>
+        <div onclick="{{ goHome }}" style="margin-top:24px;padding:14px 30px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:14px;cursor:pointer">Discover Pieces</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ wishCount }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <sc-for list="{{ wishItems }}" as="p" hint-placeholder-count="2">
+          <div>
+            <div onclick="{{ p.onOpen }}" style="position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--r);background:{{ p.tone }};overflow:hidden;cursor:pointer">
+              <div style="position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.4),transparent 60%)"></div>
+              <div onclick="{{ p.onWish }}" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent);font-variation-settings:'FILL' 1">favorite</span></div>
+            </div>
+            <div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">{{ p.n }}</div>
+            <div style="font-size:13px;font-weight:700;color:#17150F;margin-top:2px">{{ p.pf }}</div>
+            <div onclick="{{ goCart }}" style="margin-top:8px;height:38px;border:1.5px solid #17150F;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#17150F;cursor:pointer">Move to Bag</div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ ORDERS ============ -->
+<sc-if value="{{ isOrders }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Orders" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 0;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goProfile }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">My Orders</div>
+  </div>
+  <div style="display:flex;gap:22px;padding:14px 20px 0;background:#fff;overflow-x:auto">
+    <sc-for list="{{ oTabs }}" as="t" hint-placeholder-count="4"><div onclick="{{ t.onClick }}" style="flex:0 0 auto;padding-bottom:12px;border-bottom:{{ t.bb }};color:{{ t.col }};font-size:13px;font-weight:600;cursor:pointer">{{ t.l }}</div></sc-for>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="background:#fff;border-radius:18px;padding:16px;margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid #F0ECE4"><div><div style="font-size:12px;font-weight:700;color:#17150F">#ANDRO-48213</div><div style="font-size:11px;color:#8A867C;margin-top:1px">Placed 5 Jul 2026</div></div><div style="background:#F0E8D6;color:var(--accent);font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px">Out for Delivery</div></div>
+      <div style="display:flex;gap:12px;padding:12px 0">
+        <div style="width:52px;height:64px;border-radius:10px;background:#E8E4DB"></div>
+        <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Silk Wrap Dress</div><div style="font-size:11px;color:#8A867C;margin-top:2px">+ 2 more items</div><div style="font-size:13px;font-weight:700;color:#17150F;margin-top:6px">₹27,470</div></div>
+      </div>
+      <div style="display:flex;gap:10px;padding-top:12px;border-top:1px solid #F0ECE4">
+        <div onclick="{{ goTrack }}" style="flex:1;height:44px;background:#17150F;color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;cursor:pointer">Track Order</div>
+        <div style="flex:1;height:44px;border:1.5px solid #ECE8E0;color:#17150F;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600"><span style="font-family:'Material Symbols Rounded';font-size:17px">receipt_long</span>Invoice</div>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:18px;padding:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid #F0ECE4"><div><div style="font-size:12px;font-weight:700;color:#17150F">#ANDRO-47980</div><div style="font-size:11px;color:#8A867C;margin-top:1px">Placed 28 Jun 2026</div></div><div style="background:#E7F0EA;color:#1F8A5B;font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px">Delivered</div></div>
+      <div style="display:flex;gap:12px;padding:12px 0">
+        <div style="width:52px;height:64px;border-radius:10px;background:#E2DBD0"></div>
+        <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Cashmere Overcoat</div><div style="font-size:11px;color:#8A867C;margin-top:2px">1 item</div><div style="font-size:13px;font-weight:700;color:#17150F;margin-top:6px">₹18,990</div></div>
+      </div>
+      <div style="display:flex;gap:10px;padding-top:12px;border-top:1px solid #F0ECE4">
+        <div style="flex:1;height:44px;border:1.5px solid #ECE8E0;color:#17150F;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600">Buy Again</div>
+        <div style="flex:1;height:44px;border:1.5px solid #ECE8E0;color:#17150F;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600">Rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ ORDER TRACKING ============ -->
+<sc-if value="{{ isTrack }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Order Tracking" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:24px">
+    <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px">
+      <div onclick="{{ goOrders }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+      <div><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F;line-height:1">Track Order</div><div style="font-size:11px;color:#97938A;margin-top:2px">#ANDRO-48213</div></div>
+    </div>
+    <div style="margin:8px 20px;height:170px;border-radius:20px;background:#E4DED3;position:relative;overflow:hidden">
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 12px,transparent 12px 24px)"></div>
+      <div style="position:absolute;top:50%;left:30%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(156,122,44,.25)"></div>
+      <div style="position:absolute;bottom:16px;right:16px;width:44px;height:44px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px -4px rgba(0,0,0,.2)"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">my_location</span></div>
+    </div>
+    <div style="margin:14px 20px;background:#FAF8F3;border-radius:16px;padding:14px;display:flex;align-items:center;gap:12px">
+      <div style="width:46px;height:46px;border-radius:50%;background:#DED7CB;display:flex;align-items:center;justify-content:center;font-weight:700;color:#17150F">V</div>
+      <div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Vikram · Delivery Partner</div><div style="font-size:11px;color:#8A867C;margin-top:1px">Arriving in ~25 min</div></div>
+      <div style="width:42px;height:42px;border-radius:50%;background:#17150F;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#fff">call</span></div>
+      <div style="width:42px;height:42px;border-radius:50%;border:1.5px solid #ECE8E0;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">chat_bubble</span></div>
+    </div>
+    <div style="padding:8px 24px 0">
+      <div style="display:flex;gap:14px">
+        <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:15px;color:#fff">check</span></div><div style="width:2px;flex:1;background:var(--accent);min-height:34px"></div></div>
+        <div style="padding-bottom:22px"><div style="font-size:13px;font-weight:600;color:#17150F">Order Confirmed</div><div style="font-size:11px;color:#8A867C;margin-top:2px">5 Jul, 10:24 AM</div></div>
+      </div>
+      <div style="display:flex;gap:14px">
+        <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:15px;color:#fff">check</span></div><div style="width:2px;flex:1;background:var(--accent);min-height:34px"></div></div>
+        <div style="padding-bottom:22px"><div style="font-size:13px;font-weight:600;color:#17150F">Order Accepted</div><div style="font-size:11px;color:#8A867C;margin-top:2px">5 Jul, 11:02 AM</div></div>
+      </div>
+      <div style="display:flex;gap:14px">
+        <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:15px;color:#fff">check</span></div><div style="width:2px;flex:1;background:var(--accent);min-height:34px"></div></div>
+        <div style="padding-bottom:22px"><div style="font-size:13px;font-weight:600;color:#17150F">Packed</div><div style="font-size:11px;color:#8A867C;margin-top:2px">5 Jul, 1:45 PM</div></div>
+      </div>
+      <div style="display:flex;gap:14px">
+        <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(156,122,44,.2)"><span style="font-family:'Material Symbols Rounded';font-size:15px;color:#fff">local_shipping</span></div><div style="width:2px;flex:1;background:#ECE8E0;min-height:34px"></div></div>
+        <div style="padding-bottom:22px"><div style="font-size:13px;font-weight:700;color:#17150F">Out for Delivery</div><div style="font-size:11px;color:var(--accent);font-weight:600;margin-top:2px">In transit · arriving today</div></div>
+      </div>
+      <div style="display:flex;gap:14px">
+        <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;border:2px solid #ECE8E0;background:#fff"></div></div>
+        <div><div style="font-size:13px;font-weight:600;color:#C4BFB4">Delivered</div><div style="font-size:11px;color:#C4BFB4;margin-top:2px">Expected by 6:00 PM</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ NOTIFICATIONS ============ -->
+<sc-if value="{{ isNotif }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Notifications" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px">
+    <div onclick="{{ goHome }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Notifications</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:8px 20px 24px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin:8px 0 12px">Today</div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC"><div style="width:42px;height:42px;border-radius:12px;background:#F0E8D6;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">local_shipping</span></div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Your order is out for delivery</div><div style="font-size:12px;color:#8A867C;margin-top:2px;line-height:1.4">#ANDRO-48213 arrives today by 6 PM.</div></div><div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:6px"></div></div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC"><div style="width:42px;height:42px;border-radius:12px;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">checkroom</span></div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Try at Home confirmed</div><div style="font-size:12px;color:#8A867C;margin-top:2px;line-height:1.4">Stylist visit booked for Thu, 9 Jul · 2–4 PM.</div></div><div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:6px"></div></div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin:20px 0 12px">Earlier</div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC"><div style="width:42px;height:42px;border-radius:12px;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">sell</span></div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">The Autumn Edit is live</div><div style="font-size:12px;color:#8A867C;margin-top:2px;line-height:1.4">Up to 40% off premium coats, for a limited time.</div></div></div>
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC"><div style="width:42px;height:42px;border-radius:12px;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">auto_awesome</span></div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">New arrivals from ANDRÓ Atelier</div><div style="font-size:12px;color:#8A867C;margin-top:2px;line-height:1.4">Fresh pieces picked for your taste.</div></div></div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ PROFILE ============ -->
+<sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Profile" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="flex:1;overflow-y:auto;padding-bottom:100px">
+    <div style="background:#fff;padding:56px 20px 24px;border-radius:0 0 26px 26px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:64px;height:64px;border-radius:50%;background:#DED7CB;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F">A</div>
+        <div style="flex:1"><div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Ananya Rao</div><div style="font-size:12px;color:#8A867C;margin-top:2px">ananya.rao@email.com · +91 98765 43210</div></div>
+        <span style="font-family:'Material Symbols Rounded';font-size:22px;color:#C4BFB4">edit</span>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <div style="flex:1;background:#FAF8F3;border-radius:14px;padding:12px;text-align:center"><div style="font-size:18px;font-weight:700;color:#17150F">12</div><div style="font-size:10px;color:#8A867C;margin-top:1px">Orders</div></div>
+        <div onclick="{{ goWish }}" style="flex:1;background:#FAF8F3;border-radius:14px;padding:12px;text-align:center;cursor:pointer"><div style="font-size:18px;font-weight:700;color:#17150F">{{ wishCount }}</div><div style="font-size:10px;color:#8A867C;margin-top:1px">Wishlist</div></div>
+        <div style="flex:1;background:#FAF8F3;border-radius:14px;padding:12px;text-align:center"><div style="font-size:18px;font-weight:700;color:var(--accent)">Gold</div><div style="font-size:10px;color:#8A867C;margin-top:1px">Member</div></div>
+      </div>
+    </div>
+    <div style="padding:20px">
+      <div style="background:#fff;border-radius:18px;overflow:hidden">
+        <div onclick="{{ goOrders }}" style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">shopping_bag</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">My Orders</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div onclick="{{ goAddresses }}" style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">location_on</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Saved Addresses</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">checkroom</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Try at Home Bookings</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div style="display:flex;align-items:center;gap:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">account_balance_wallet</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Payments &amp; Wallet</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+      </div>
+      <div style="background:#fff;border-radius:18px;overflow:hidden;margin-top:16px">
+        <div onclick="{{ goHelp }}" style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">help</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Help &amp; Support</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div onclick="{{ goSettings }}" style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">settings</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Settings</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">shield</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Privacy Policy</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+        <div onclick="{{ goStates }}" style="display:flex;align-items:center;gap:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">grid_view</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">States &amp; Components</span><span style="background:#F0E8D6;color:var(--accent);font-size:9px;font-weight:700;padding:3px 8px;border-radius:10px">KIT</span></div>
+      </div>
+      <div onclick="{{ goLogin }}" style="margin-top:16px;height:52px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;color:#B03A3A;font-size:14px;font-weight:600;cursor:pointer;background:#fff"><span style="font-family:'Material Symbols Rounded';font-size:20px">logout</span>Log Out</div>
+      <div style="text-align:center;font-size:11px;color:#C4BFB4;margin-top:16px">ANDRÓ · Version 2.4.0</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ SEARCH ============ -->
+<sc-if value="{{ isSearch }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Search" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:10px">
+    <div onclick="{{ goHome }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="flex:1;height:46px;border-radius:14px;background:#F5F2EC;display:flex;align-items:center;gap:10px;padding:0 14px"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#97938A">search</span><span style="flex:1;font-size:14px;color:#97938A">Search brands, styles…</span><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">mic</span></div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:12px 20px 24px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><div style="font-size:13px;font-weight:700;color:#17150F">Recent Searches</div><div style="font-size:12px;color:var(--accent);font-weight:600">Clear</div></div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:6px;padding:9px 14px;border-radius:20px;background:#F5F2EC;font-size:13px;color:#57534B;font-weight:500"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#97938A">history</span>Silk dress</div>
+      <div style="display:flex;align-items:center;gap:6px;padding:9px 14px;border-radius:20px;background:#F5F2EC;font-size:13px;color:#57534B;font-weight:500"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#97938A">history</span>Wool blazer</div>
+      <div style="display:flex;align-items:center;gap:6px;padding:9px 14px;border-radius:20px;background:#F5F2EC;font-size:13px;color:#57534B;font-weight:500"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#97938A">history</span>Loafers</div>
+    </div>
+    <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Trending Searches</div>
+    <div onclick="{{ goList }}" style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:var(--accent)">trending_up</span><span style="flex:1;font-size:14px;color:#17150F">Cashmere overcoats</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#C4BFB4">north_east</span></div>
+    <div onclick="{{ goList }}" style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:var(--accent)">trending_up</span><span style="flex:1;font-size:14px;color:#17150F">Occasion wear</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#C4BFB4">north_east</span></div>
+    <div onclick="{{ goList }}" style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #F5F2EC;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:var(--accent)">trending_up</span><span style="flex:1;font-size:14px;color:#17150F">Linen resort shirts</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#C4BFB4">north_east</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:20px;color:#17150F;margin:22px 0 12px">Popular Pieces</div>
+    <div style="display:flex;gap:14px;overflow-x:auto">
+      <sc-for list="{{ trending }}" as="p" hint-placeholder-count="4"><div onclick="{{ p.onOpen }}" style="flex:0 0 auto;width:120px;cursor:pointer"><div style="width:120px;height:150px;border-radius:14px;background:{{ p.tone }}"></div><div style="font-size:12px;font-weight:600;color:#17150F;margin-top:6px">{{ p.n }}</div><div style="font-size:12px;font-weight:700;color:#17150F">{{ p.pf }}</div></div></sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ COUPONS ============ -->
+<sc-if value="{{ isCoupons }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Coupons" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goCart }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Coupons</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="background:#fff;border-radius:16px;padding:6px 6px 6px 16px;display:flex;align-items:center;gap:10px;margin-bottom:20px;border:1.5px dashed #D8D2C6">
+      <span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">confirmation_number</span>
+      <span style="flex:1;font-size:14px;color:#B4AFA4;letter-spacing:.08em">Enter coupon code</span>
+      <div onclick="{{ applyCoupon }}" style="background:#17150F;color:#fff;font-size:13px;font-weight:600;padding:11px 20px;border-radius:12px;cursor:pointer">Apply</div>
+    </div>
+    <sc-if value="{{ couponApplied }}" hint-placeholder-val="{{ false }}">
+      <div style="background:#E7F0EA;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:10px;margin-bottom:20px;animation:fadeUp .35s ease both">
+        <span style="font-family:'Material Symbols Rounded';font-size:22px;color:#1F8A5B;font-variation-settings:'FILL' 1">check_circle</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:700;color:#17150F">‘ANDRO40’ applied</div><div style="font-size:12px;color:#4A7A5E;margin-top:1px">You saved ₹8,000 on this order.</div></div>
+      </div>
+    </sc-if>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Available for you</div>
+    <sc-for list="{{ coupons }}" as="c" hint-placeholder-count="3">
+      <div style="background:#fff;border-radius:16px;padding:16px;margin-bottom:12px;display:flex;gap:14px">
+        <div style="width:52px;background:#F0E8D6;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 0"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">sell</span></div>
+        <div style="flex:1">
+          <div style="font-size:14px;font-weight:700;color:#17150F">{{ c.t }}</div>
+          <div style="font-size:12px;color:#8A867C;margin-top:3px;line-height:1.4">{{ c.d }}</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px dashed #ECE8E0">
+            <div style="border:1px dashed #C4BFB4;border-radius:8px;padding:5px 12px;font-size:12px;font-weight:700;color:#17150F;letter-spacing:.08em">{{ c.code }}</div>
+            <div onclick="{{ applyCoupon }}" style="font-size:13px;color:var(--accent);font-weight:700;cursor:pointer">APPLY</div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ REVIEWS ============ -->
+<sc-if value="{{ isReviews }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Reviews" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px">
+    <div onclick="{{ goPdp }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Ratings &amp; Reviews</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:8px 20px 24px">
+    <div style="display:flex;gap:20px;align-items:center;padding:18px;background:#FAF8F3;border-radius:18px">
+      <div style="text-align:center"><div style="font-family:'Cormorant Garamond';font-weight:700;font-size:48px;color:#17150F;line-height:1">4.8</div><div style="display:flex;gap:2px;justify-content:center;margin-top:4px"><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:14px;color:var(--accent);font-variation-settings:'FILL' 1">star</span></div><div style="font-size:11px;color:#8A867C;margin-top:5px">214 reviews</div></div>
+      <div style="flex:1">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:11px;color:#8A867C;width:8px">5</span><div style="flex:1;height:6px;background:#ECE8E0;border-radius:3px"><div style="width:82%;height:6px;background:var(--accent);border-radius:3px"></div></div></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:11px;color:#8A867C;width:8px">4</span><div style="flex:1;height:6px;background:#ECE8E0;border-radius:3px"><div style="width:12%;height:6px;background:var(--accent);border-radius:3px"></div></div></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:11px;color:#8A867C;width:8px">3</span><div style="flex:1;height:6px;background:#ECE8E0;border-radius:3px"><div style="width:4%;height:6px;background:var(--accent);border-radius:3px"></div></div></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:11px;color:#8A867C;width:8px">2</span><div style="flex:1;height:6px;background:#ECE8E0;border-radius:3px"><div style="width:2%;height:6px;background:var(--accent);border-radius:3px"></div></div></div>
+        <div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:#8A867C;width:8px">1</span><div style="flex:1;height:6px;background:#ECE8E0;border-radius:3px"><div style="width:1%;height:6px;background:var(--accent);border-radius:3px"></div></div></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin:18px 0 8px;overflow-x:auto">
+      <sc-for list="{{ revFilters }}" as="f" hint-placeholder-count="4"><div onclick="{{ f.onClick }}" style="flex:0 0 auto;padding:8px 16px;border-radius:20px;background:{{ f.bg }};color:{{ f.col }};border:1.5px solid {{ f.bd }};font-size:12px;font-weight:600;cursor:pointer">{{ f.l }}</div></sc-for>
+    </div>
+    <div style="display:flex;gap:8px;margin:12px 0 18px;overflow-x:auto">
+      <div style="width:76px;height:76px;border-radius:12px;background:#E8E4DB;flex:0 0 auto"></div>
+      <div style="width:76px;height:76px;border-radius:12px;background:#E2DBD0;flex:0 0 auto"></div>
+      <div style="width:76px;height:76px;border-radius:12px;background:#DED7CB;flex:0 0 auto"></div>
+      <div style="width:76px;height:76px;border-radius:12px;background:#E4DED3;flex:0 0 auto;position:relative"><div style="position:absolute;inset:0;background:rgba(20,18,14,.5);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700">+48</div></div>
+    </div>
+    <div style="padding:16px 0;border-top:1px solid #F5F2EC">
+      <div style="display:flex;align-items:center;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#DED7CB;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#17150F">R</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Riya S.</div><div style="font-size:10px;color:#B4AFA4">Verified · 2 days ago</div></div><div style="display:flex;align-items:center;gap:3px;background:#F0E8D6;padding:3px 8px;border-radius:8px"><span style="font-family:'Material Symbols Rounded';font-size:12px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-size:11px;font-weight:700;color:#17150F">5.0</span></div></div>
+      <div style="font-size:13px;line-height:1.6;color:#57534B;margin-top:10px">Exquisite fabric and the fit is perfect. The Try at Home service made choosing the right size effortless.</div>
+      <div style="display:flex;gap:8px;margin-top:10px"><div style="width:56px;height:56px;border-radius:10px;background:#E8E4DB"></div><div style="width:56px;height:56px;border-radius:10px;background:#E2DBD0"></div></div>
+    </div>
+    <div style="padding:16px 0;border-top:1px solid #F5F2EC">
+      <div style="display:flex;align-items:center;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#E2DBD0;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#17150F">M</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:#17150F">Meera K.</div><div style="font-size:10px;color:#B4AFA4">Verified · 1 week ago</div></div><div style="display:flex;align-items:center;gap:3px;background:#F0E8D6;padding:3px 8px;border-radius:8px"><span style="font-family:'Material Symbols Rounded';font-size:12px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-size:11px;font-weight:700;color:#17150F">4.0</span></div></div>
+      <div style="font-size:13px;line-height:1.6;color:#57534B;margin-top:10px">Beautiful drape and true to the photos. Sizing runs slightly large — I'd size down.</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ ADDRESSES ============ -->
+<sc-if value="{{ isAddresses }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Addresses" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goProfile }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Saved Addresses</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="background:#fff;border-radius:16px;padding:16px;margin-bottom:12px;border:1.5px solid var(--accent)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="background:#F0E8D6;color:var(--accent);font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px">HOME · DEFAULT</span></div>
+      <div style="font-size:14px;font-weight:600;color:#17150F">Ananya Rao</div>
+      <div style="font-size:12px;color:#8A867C;line-height:1.5;margin-top:4px">402, Sea Breeze Apartments, Bandra West, Mumbai 400050 · +91 98765 43210</div>
+      <div style="display:flex;gap:18px;margin-top:12px;padding-top:12px;border-top:1px solid #F5F2EC"><span onclick="{{ goAddressForm }}" style="font-size:13px;color:var(--accent);font-weight:600;cursor:pointer">Edit</span><span style="font-size:13px;color:#8A867C;font-weight:600">Delete</span></div>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:16px;margin-bottom:16px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="background:#F5F2EC;color:#57534B;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px">WORK</span></div>
+      <div style="font-size:14px;font-weight:600;color:#17150F">Ananya Rao</div>
+      <div style="font-size:12px;color:#8A867C;line-height:1.5;margin-top:4px">7th Floor, Prism Tower, Lower Parel, Mumbai 400013 · +91 98765 43210</div>
+      <div style="display:flex;gap:18px;margin-top:12px;padding-top:12px;border-top:1px solid #F5F2EC"><span onclick="{{ goAddressForm }}" style="font-size:13px;color:var(--accent);font-weight:600;cursor:pointer">Edit</span><span style="font-size:13px;color:#8A867C;font-weight:600">Delete</span><span style="font-size:13px;color:#8A867C;font-weight:600">Set Default</span></div>
+    </div>
+    <div onclick="{{ goAddressForm }}" style="border:1.5px dashed #D8D2C6;border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--accent);font-size:14px;font-weight:600;cursor:pointer;background:#fff"><span style="font-family:'Material Symbols Rounded';font-size:20px">add</span>Add New Address</div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ ADDRESS FORM ============ -->
+<sc-if value="{{ isAddressForm }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Add Address" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px">
+    <div onclick="{{ goAddresses }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Add Address</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:12px 20px 24px">
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:8px">Full Name</div>
+    <div style="height:52px;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;padding:0 16px;font-size:15px;color:#17150F;font-weight:500;margin-bottom:18px">Ananya Rao</div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:8px">Phone Number</div>
+    <div style="height:52px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;padding:0 16px;font-size:15px;color:#17150F;margin-bottom:18px">+91 98765 43210</div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:8px">Address Line</div>
+    <div style="min-height:72px;border:1.5px solid #ECE8E0;border-radius:14px;padding:14px 16px;font-size:14px;color:#57534B;line-height:1.5;margin-bottom:18px">Flat / House no., Building, Street, Area</div>
+    <div style="display:flex;gap:12px;margin-bottom:18px">
+      <div style="flex:1"><div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:8px">City</div><div style="height:52px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;padding:0 16px;font-size:15px;color:#17150F">Mumbai</div></div>
+      <div style="flex:1"><div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:8px">Pincode</div><div style="height:52px;border:1.5px solid #ECE8E0;border-radius:14px;display:flex;align-items:center;padding:0 16px;font-size:15px;color:#B4AFA4">400050</div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Address Type</div>
+    <div style="display:flex;gap:10px">
+      <div style="flex:1;height:46px;border-radius:12px;background:#17150F;color:#fff;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600"><span style="font-family:'Material Symbols Rounded';font-size:18px">home</span>Home</div>
+      <div style="flex:1;height:46px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600"><span style="font-family:'Material Symbols Rounded';font-size:18px">work</span>Work</div>
+      <div style="flex:1;height:46px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600"><span style="font-family:'Material Symbols Rounded';font-size:18px">place</span>Other</div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #F0ECE4;padding:12px 16px 22px"><div onclick="{{ goAddresses }}" style="height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer">Save Address</div></div>
+</div>
+</sc-if>
+
+<!-- ============ HELP & SUPPORT ============ -->
+<sc-if value="{{ isHelp }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Help &amp; Support" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goProfile }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Help &amp; Support</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="display:flex;gap:12px;margin-bottom:20px">
+      <div style="flex:1;background:#17150F;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">chat_bubble</span><span style="font-size:13px;font-weight:600;color:#fff">Chat Support</span><span style="font-size:10px;color:#8b8578">Avg. reply 2 min</span></div>
+      <div style="flex:1;background:#fff;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">call</span><span style="font-size:13px;font-weight:600;color:#17150F">Call Support</span><span style="font-size:10px;color:#8A867C">9 AM – 9 PM</span></div>
+      <div style="flex:1;background:#fff;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">mail</span><span style="font-size:13px;font-weight:600;color:#17150F">Email Us</span><span style="font-size:10px;color:#8A867C">24h reply</span></div>
+    </div>
+    <div style="font-size:13px;font-weight:700;color:#17150F;margin-bottom:12px">Frequently Asked</div>
+    <div style="background:#fff;border-radius:16px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:12px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="flex:1;font-size:13px;color:#17150F;font-weight:500">How does Try at Home work?</span><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#C4BFB4">expand_more</span></div>
+      <div style="padding:0 16px 16px;border-bottom:1px solid #F5F2EC"><div style="font-size:12px;color:#8A867C;line-height:1.6">Select up to 10 pieces, book a slot, and our stylist brings them home. Keep what you love, pay only for those — the ₹499 fee is fully refundable.</div></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="flex:1;font-size:13px;color:#17150F;font-weight:500">What is the return policy?</span><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#C4BFB4">chevron_right</span></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="flex:1;font-size:13px;color:#17150F;font-weight:500">How do I track my order?</span><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#C4BFB4">chevron_right</span></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:16px"><span style="flex:1;font-size:13px;color:#17150F;font-weight:500">Which payment methods are accepted?</span><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#C4BFB4">chevron_right</span></div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ SETTINGS ============ -->
+<sc-if value="{{ isSettings }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Settings" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goProfile }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Settings</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Preferences</div>
+    <div style="background:#fff;border-radius:16px;overflow:hidden;margin-bottom:20px">
+      <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">notifications</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Push Notifications</span><div onclick="{{ togPush }}" style="width:44px;height:26px;border-radius:14px;background:{{ pushTog.bg }};position:relative;cursor:pointer;transition:background .2s"><div style="position:absolute;top:2px;left:{{ pushTog.x }};width:22px;height:22px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)"></div></div></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">local_offer</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Offers &amp; Promotions</span><div onclick="{{ togOffers }}" style="width:44px;height:26px;border-radius:14px;background:{{ offersTog.bg }};position:relative;cursor:pointer;transition:background .2s"><div style="position:absolute;top:2px;left:{{ offersTog.x }};width:22px;height:22px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)"></div></div></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">dark_mode</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Dark Mode</span><div onclick="{{ togDark }}" style="width:44px;height:26px;border-radius:14px;background:{{ darkTog.bg }};position:relative;cursor:pointer;transition:background .2s"><div style="position:absolute;top:2px;left:{{ darkTog.x }};width:22px;height:22px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)"></div></div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">General</div>
+    <div style="background:#fff;border-radius:16px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">language</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Language</span><span style="font-size:13px;color:#8A867C">English</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">description</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Terms of Service</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #F5F2EC"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">shield</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">Privacy</span><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C4BFB4">chevron_right</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:16px"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#57534B">info</span><span style="flex:1;font-size:14px;color:#17150F;font-weight:500">About ANDRÓ</span><span style="font-size:13px;color:#8A867C">v2.4.0</span></div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ STATES & COMPONENTS GALLERY ============ -->
+<sc-if value="{{ isStates }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="States Gallery" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goProfile }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">States &amp; Components</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Component Sheet</div>
+    <div onclick="{{ goComponents }}" style="background:#17150F;border-radius:16px;padding:16px;display:flex;align-items:center;gap:12px;margin-bottom:20px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:var(--accent)">widgets</span><div style="flex:1"><div style="font-size:14px;font-weight:600;color:#fff">UI Kit — Components</div><div style="font-size:11px;color:#8b8578;margin-top:2px">Buttons · chips · selectors · dialogs</div></div><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#6c675c">chevron_right</span></div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Empty States</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+      <div onclick="{{ goEmptyCart }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">shopping_bag</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Empty Cart</div></div>
+      <div onclick="{{ goNoOrders }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">receipt_long</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">No Orders</div></div>
+      <div onclick="{{ goNoResults }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">search_off</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">No Results</div></div>
+      <div onclick="{{ goOffline }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">wifi_off</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Offline</div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Error States</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+      <div onclick="{{ goPayFailed }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#B03A3A">credit_card_off</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Payment Failed</div></div>
+      <div onclick="{{ goServerError }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#B03A3A">cloud_off</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Server Error</div></div>
+      <div onclick="{{ goSessionExpired }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#B03A3A">lock_clock</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Session Expired</div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:10px">Loading Skeletons</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div onclick="{{ goSkHome }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">home</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Home Loading</div></div>
+      <div onclick="{{ goSkList }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">grid_view</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Listing Loading</div></div>
+      <div onclick="{{ goSkPdp }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">checkroom</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Product Loading</div></div>
+      <div onclick="{{ goSkCart }}" style="background:#fff;border-radius:14px;padding:16px;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:var(--accent)">shopping_bag</span><div style="font-size:13px;font-weight:600;color:#17150F;margin-top:8px">Cart Loading</div></div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ EMPTY CART ============ -->
+<sc-if value="{{ isEmptyCart }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Empty Cart" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:48px;color:var(--accent);font-variation-settings:'wght' 200">shopping_bag</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">Your bag is empty</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">Discover timeless pieces and add your<br>favourites to the bag.</div>
+  <div onclick="{{ goHome }}" style="margin-top:28px;padding:15px 34px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer">Start Shopping</div>
+</div>
+</sc-if>
+
+<!-- ============ NO ORDERS ============ -->
+<sc-if value="{{ isNoOrders }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="No Orders" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:48px;color:var(--accent);font-variation-settings:'wght' 200">receipt_long</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">No orders yet</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">When you place an order, it will appear<br>here for easy tracking.</div>
+  <div onclick="{{ goHome }}" style="margin-top:28px;padding:15px 34px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer">Explore Collections</div>
+</div>
+</sc-if>
+
+<!-- ============ NO SEARCH RESULTS ============ -->
+<sc-if value="{{ isNoResults }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="No Results" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:48px;color:var(--accent);font-variation-settings:'wght' 200">search_off</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">No results found</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">We couldn't find anything for “velvet gown”.<br>Try a different keyword or filter.</div>
+  <div onclick="{{ goSearch }}" style="margin-top:28px;padding:15px 34px;border:1.5px solid #17150F;color:#17150F;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer">Clear Search</div>
+</div>
+</sc-if>
+
+<!-- ============ OFFLINE ============ -->
+<sc-if value="{{ isOffline }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Offline" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:48px;color:var(--accent);font-variation-settings:'wght' 200">wifi_off</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">You're offline</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">Check your internet connection and<br>try again.</div>
+  <div onclick="{{ goHome }}" style="margin-top:28px;padding:15px 34px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:8px"><span style="font-family:'Material Symbols Rounded';font-size:20px">refresh</span>Retry</div>
+</div>
+</sc-if>
+
+<!-- ============ PAYMENT FAILED ============ -->
+<sc-if value="{{ isPayFailed }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Payment Failed" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#FBEDED;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:52px;color:#B03A3A;font-variation-settings:'FILL' 1">error</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">Payment Failed</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">Your payment couldn't be processed.<br>No amount was deducted.</div>
+  <div style="margin-top:28px;width:100%"><div onclick="{{ goCheckout }}" style="height:54px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer;margin-bottom:12px">Retry Payment</div><div onclick="{{ goHelp }}" style="height:54px;border:1.5px solid #ECE8E0;color:#17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;cursor:pointer">Contact Support</div></div>
+</div>
+</sc-if>
+
+<!-- ============ SERVER ERROR ============ -->
+<sc-if value="{{ isServerError }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Server Error" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#FBEDED;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:52px;color:#B03A3A;font-variation-settings:'wght' 200">cloud_off</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">Something went wrong</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">Our servers are having a moment.<br>Please try again shortly.</div>
+  <div style="font-size:11px;color:#C4BFB4;margin-top:14px">Error 500 · ANDRO-SVC</div>
+  <div onclick="{{ goHome }}" style="margin-top:24px;padding:15px 34px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:8px"><span style="font-family:'Material Symbols Rounded';font-size:20px">refresh</span>Try Again</div>
+</div>
+</sc-if>
+
+<!-- ============ SESSION EXPIRED ============ -->
+<sc-if value="{{ isSessionExpired }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Session Expired" style="position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="width:104px;height:104px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:48px;color:var(--accent);font-variation-settings:'wght' 200">lock_clock</span></div>
+  <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:28px;color:#17150F;margin-top:26px">Session Expired</div>
+  <div style="font-size:14px;color:#8A867C;text-align:center;line-height:1.6;margin-top:10px">For your security, you've been signed out.<br>Please log in again to continue.</div>
+  <div onclick="{{ goLogin }}" style="margin-top:28px;padding:15px 44px;background:#17150F;color:#fff;border-radius:14px;font-weight:600;font-size:15px;cursor:pointer">Log In Again</div>
+</div>
+</sc-if>
+
+<!-- ============ SKELETON — HOME ============ -->
+<sc-if value="{{ isSkHome }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Home Skeleton" style="position:absolute;inset:0;background:#fff;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;z-index:5;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="padding:56px 20px 0">
+    <div style="height:48px;border-radius:14px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin:14px 0"></div>
+    <div style="height:172px;border-radius:22px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:22px"></div>
+    <div style="display:flex;gap:16px;margin-bottom:24px"><div style="width:62px;height:62px;border-radius:50%;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div><div style="width:62px;height:62px;border-radius:50%;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div><div style="width:62px;height:62px;border-radius:50%;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div><div style="width:62px;height:62px;border-radius:50%;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div></div>
+    <div style="height:22px;width:150px;border-radius:6px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:16px"></div>
+    <div style="display:flex;gap:14px"><div style="flex:1"><div style="height:200px;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:70%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div><div style="flex:1"><div style="height:200px;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:70%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div></div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ SKELETON — LISTING ============ -->
+<sc-if value="{{ isSkList }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Listing Skeleton" style="position:absolute;inset:0;background:#fff;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;z-index:5;width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="padding:56px 20px 0">
+    <div style="height:24px;width:180px;border-radius:6px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin:8px 0 16px"></div>
+    <div style="display:flex;gap:10px;margin-bottom:20px"><div style="width:80px;height:38px;border-radius:20px;background:#EFECE5"></div><div style="width:70px;height:38px;border-radius:20px;background:#EFECE5"></div><div style="width:64px;height:38px;border-radius:20px;background:#EFECE5"></div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div><div style="aspect-ratio:3/4;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:60%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div>
+      <div><div style="aspect-ratio:3/4;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:60%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div>
+      <div><div style="aspect-ratio:3/4;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:60%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div>
+      <div><div style="aspect-ratio:3/4;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:8px"></div><div style="height:12px;width:60%;border-radius:4px;background:#EFECE5;margin-bottom:6px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5"></div></div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ SKELETON — PDP ============ -->
+<sc-if value="{{ isSkPdp }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Product Skeleton" style="position:absolute;inset:0;background:#fff;animation:fadeIn .3s ease both">
+  <div onclick="{{ goStates }}" style="position:absolute;top:52px;left:16px;z-index:5;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+  <div style="height:440px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div>
+  <div style="padding:20px">
+    <div style="height:14px;width:100px;border-radius:4px;background:#EFECE5;margin-bottom:12px"></div>
+    <div style="height:28px;width:80%;border-radius:6px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;margin-bottom:14px"></div>
+    <div style="height:22px;width:50%;border-radius:6px;background:#EFECE5;margin-bottom:24px"></div>
+    <div style="display:flex;gap:12px;margin-bottom:24px"><div style="width:32px;height:32px;border-radius:50%;background:#EFECE5"></div><div style="width:32px;height:32px;border-radius:50%;background:#EFECE5"></div><div style="width:32px;height:32px;border-radius:50%;background:#EFECE5"></div></div>
+    <div style="display:flex;gap:10px"><div style="width:48px;height:48px;border-radius:12px;background:#EFECE5"></div><div style="width:48px;height:48px;border-radius:12px;background:#EFECE5"></div><div style="width:48px;height:48px;border-radius:12px;background:#EFECE5"></div><div style="width:48px;height:48px;border-radius:12px;background:#EFECE5"></div></div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ SKELETON — CART ============ -->
+<sc-if value="{{ isSkCart }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Cart Skeleton" style="position:absolute;inset:0;background:#FAF8F3;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff"><div onclick="{{ goStates }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div><div style="height:24px;width:150px;border-radius:6px;background:#EFECE5"></div></div>
+  <div style="padding:16px 20px">
+    <div style="display:flex;gap:12px;background:#fff;border-radius:18px;padding:12px;margin-bottom:12px"><div style="width:70px;height:90px;border-radius:12px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div><div style="flex:1"><div style="height:12px;width:50%;border-radius:4px;background:#EFECE5;margin-bottom:10px"></div><div style="height:14px;width:80%;border-radius:4px;background:#EFECE5;margin-bottom:10px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5;margin-bottom:16px"></div><div style="height:32px;width:110px;border-radius:10px;background:#EFECE5"></div></div></div>
+    <div style="display:flex;gap:12px;background:#fff;border-radius:18px;padding:12px;margin-bottom:12px"><div style="width:70px;height:90px;border-radius:12px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div><div style="flex:1"><div style="height:12px;width:50%;border-radius:4px;background:#EFECE5;margin-bottom:10px"></div><div style="height:14px;width:80%;border-radius:4px;background:#EFECE5;margin-bottom:10px"></div><div style="height:12px;width:40%;border-radius:4px;background:#EFECE5;margin-bottom:16px"></div><div style="height:32px;width:110px;border-radius:10px;background:#EFECE5"></div></div></div>
+    <div style="height:140px;border-radius:18px;background:linear-gradient(90deg,#EFECE5 25%,#F7F5F0 50%,#EFECE5 75%);background-size:200% 100%;animation:shimmer 1.4s infinite"></div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ COMPONENT SHEET ============ -->
+<sc-if value="{{ isComponents }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Components" style="position:absolute;inset:0;background:#FAF8F3;display:flex;flex-direction:column;animation:fadeIn .3s ease both">
+  <div style="padding:52px 16px 12px;display:flex;align-items:center;gap:8px;background:#fff">
+    <div onclick="{{ goStates }}" style="width:42px;height:42px;border-radius:50%;background:#F5F2EC;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:#17150F">arrow_back</span></div>
+    <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">UI Components</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:16px 20px 24px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Buttons</div>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
+      <div style="height:50px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px">Primary Button</div>
+      <div style="height:50px;border:1.5px solid #17150F;color:#17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px">Secondary Button</div>
+      <div style="display:flex;gap:10px"><div style="flex:1;height:44px;background:var(--accent);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px">Accent</div><div style="flex:1;height:44px;background:#F0ECE4;color:#17150F;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px">Tonal</div><div style="width:44px;height:44px;border:1.5px solid #ECE8E0;border-radius:12px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#17150F">favorite</span></div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Filter Chips</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px"><div style="padding:9px 16px;border-radius:20px;background:#17150F;color:#fff;font-size:12px;font-weight:600">Selected</div><div style="padding:9px 16px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Default</div><div style="padding:9px 16px;border-radius:20px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600;display:flex;align-items:center;gap:5px"><span style="font-family:'Material Symbols Rounded';font-size:15px">tune</span>Filters</div></div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Rating &amp; Selectors</div>
+    <div style="background:#fff;border-radius:16px;padding:16px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:16px"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:var(--accent);font-variation-settings:'FILL' 1">star</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#E4E0D7;font-variation-settings:'FILL' 1">star</span><span style="font-size:13px;font-weight:700;color:#17150F;margin-left:6px">4.0</span></div>
+      <div style="display:flex;gap:10px;margin-bottom:16px"><div style="width:44px;height:44px;border-radius:12px;background:#17150F;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600">M</div><div style="width:44px;height:44px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600">L</div><div style="width:44px;height:44px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600">XL</div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between"><div style="display:flex;gap:12px"><div style="width:30px;height:30px;border-radius:50%;background:#3A3A38;box-shadow:0 0 0 2px #fff,0 0 0 4px var(--accent)"></div><div style="width:30px;height:30px;border-radius:50%;background:#8A6E4B"></div><div style="width:30px;height:30px;border-radius:50%;background:#5B6B5E"></div></div><div style="display:flex;align-items:center;gap:12px;border:1.5px solid #ECE8E0;border-radius:10px;padding:5px 10px"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#17150F">remove</span><span style="font-size:13px;font-weight:700;color:#17150F">1</span><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#17150F">add</span></div></div>
+    </div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Toast</div>
+    <div style="background:#17150F;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:10px;margin-bottom:24px"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#7BD6A0;font-variation-settings:'FILL' 1">check_circle</span><span style="flex:1;font-size:13px;color:#fff">Added to your bag</span><span style="font-size:12px;color:var(--accent);font-weight:700">VIEW</span></div>
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Dialog</div>
+    <div style="background:#fff;border-radius:20px;padding:22px;box-shadow:0 20px 40px -16px rgba(30,26,18,.2)">
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:22px;color:#17150F">Remove from bag?</div>
+      <div style="font-size:13px;color:#8A867C;line-height:1.5;margin-top:8px">This piece will be moved to your wishlist.</div>
+      <div style="display:flex;gap:12px;margin-top:20px"><div style="flex:1;height:46px;border:1.5px solid #ECE8E0;color:#17150F;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600">Cancel</div><div style="flex:1;height:46px;background:#17150F;color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600">Remove</div></div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- INSERT-SCREENS -->
+
+<!-- ============ STATUS BAR ============ -->
+<sc-if value="{{ showStatus }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;top:0;left:0;right:0;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 26px;z-index:80;pointer-events:none">
+  <span style="font-size:13px;font-weight:700;color:#17150F">9:41</span>
+  <div style="display:flex;gap:6px;align-items:center;color:#17150F">
+    <span style="font-family:'Material Symbols Rounded';font-size:16px">signal_cellular_alt</span>
+    <span style="font-family:'Material Symbols Rounded';font-size:16px">wifi</span>
+    <span style="font-family:'Material Symbols Rounded';font-size:19px">battery_full</span>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ BOTTOM NAV ============ -->
+<sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid #F0ECE4;display:flex;align-items:flex-start;justify-content:space-around;padding:12px 8px 20px;z-index:60">
+  <sc-for list="{{ navItems }}" as="it" hint-placeholder-count="5">
+    <div onclick="{{ it.onClick }}" style="display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;flex:1">
+      <div style="width:58px;height:30px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:{{ it.bg }};transition:background .2s"><span style="font-family:'Material Symbols Rounded';font-size:23px;color:{{ it.col }};font-variation-settings:'FILL' {{ it.fill }},'wght' 300">{{ it.ic }}</span></div>
+      <sc-if value="{{ navLabels }}"><span style="font-size:10.5px;font-weight:600;color:{{ it.col }}">{{ it.l }}</span></sc-if>
+    </div>
+  </sc-for>
+</div>
+</sc-if>
+
+<!-- ============ FILTERS SHEET ============ -->
+<sc-if value="{{ filtersOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:90">
+  <div onclick="{{ closeFilters }}" style="position:absolute;inset:0;background:rgba(20,18,14,.45);animation:fadeIn .25s ease both"></div>
+  <div style="position:absolute;bottom:0;left:0;right:0;background:#fff;border-radius:28px 28px 0 0;max-height:82%;display:flex;flex-direction:column;animation:sheetUp .32s cubic-bezier(.2,.8,.2,1) both">
+    <div style="padding:12px 0 4px;display:flex;justify-content:center"><div style="width:38px;height:4px;border-radius:2px;background:#E4E0D7"></div></div>
+    <div style="padding:8px 24px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #F0ECE4">
+      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:24px;color:#17150F">Filters</div>
+      <div style="font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.06em">CLEAR ALL</div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:20px 24px">
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Size</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px">
+        <div style="padding:9px 18px;border-radius:12px;background:#17150F;color:#fff;font-size:13px;font-weight:600">M</div>
+        <div style="padding:9px 18px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:13px;font-weight:600">XS</div>
+        <div style="padding:9px 18px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:13px;font-weight:600">S</div>
+        <div style="padding:9px 18px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:13px;font-weight:600">L</div>
+        <div style="padding:9px 18px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:13px;font-weight:600">XL</div>
+      </div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Colour</div>
+      <div style="display:flex;gap:14px;margin-bottom:24px">
+        <div style="width:34px;height:34px;border-radius:50%;background:#3A3A38;box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--accent)"></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#8A6E4B"></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#B7B2A6"></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#5B6B5E"></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#2C3A55"></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#7A2E2E"></div>
+      </div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Price Range</div>
+      <div style="height:4px;background:#ECE8E0;border-radius:2px;position:relative;margin:0 6px 8px"><div style="position:absolute;left:15%;right:30%;height:4px;background:var(--accent);border-radius:2px"></div><div style="position:absolute;left:15%;top:-6px;width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid var(--accent)"></div><div style="position:absolute;right:30%;top:-6px;width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid var(--accent)"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:#57534B;font-weight:600;margin-bottom:24px"><span>₹2,000</span><span>₹18,000</span></div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Brand</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px">
+        <div style="padding:9px 16px;border-radius:12px;background:#17150F;color:#fff;font-size:12px;font-weight:600">Atelier</div>
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Heritage</div>
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Milano</div>
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Studio</div>
+      </div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#97938A;margin-bottom:12px">Fabric</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Silk</div>
+        <div style="padding:9px 16px;border-radius:12px;background:#17150F;color:#fff;font-size:12px;font-weight:600">Cashmere</div>
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Wool</div>
+        <div style="padding:9px 16px;border-radius:12px;border:1.5px solid #ECE8E0;color:#57534B;font-size:12px;font-weight:600">Linen</div>
+      </div>
+    </div>
+    <div style="padding:16px 24px 24px;border-top:1px solid #F0ECE4;display:flex;gap:12px">
+      <div onclick="{{ closeFilters }}" style="flex:0 0 40%;height:52px;border:1.5px solid #17150F;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:#17150F;cursor:pointer">Reset</div>
+      <div onclick="{{ closeFilters }}" style="flex:1;height:52px;background:#17150F;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;cursor:pointer">Show 248 Results</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:430,&quot;height&quot;:880},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#9C7A2C&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Theme&quot;,&quot;options&quot;:[&quot;#9C7A2C&quot;,&quot;#4A3728&quot;,&quot;#1F3D2E&quot;]},&quot;navLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Navigation&quot;},&quot;roundness&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:18,&quot;min&quot;:8,&quot;max&quot;:28,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Theme&quot;}}">
+class Component extends DCLogic {
+  frameRef = React.createRef();
+  state = {
+    screen:'splash', onb:0, filtersOpen:false, wish:{}, tab:'home',
+    pdpImg:0, pdpSize:'M', pdpColor:0, sort:'Popular', orderTab:'Active',
+    qty:{'Silk Wrap Dress':1,'Tailored Wool Blazer':1,'Merino Knit Sweater':2},
+    tryDate:1, tryTime:2, pay:'upi',
+    couponApplied:false, revFilter:'All', push:true, offers:true, dark:false
+  };
+  componentDidMount(){ this.applyVars(); }
+  componentDidUpdate(){ this.applyVars(); }
+  applyVars(){ const el=this.frameRef.current; if(!el) return;
+    if(this.props.accent) el.style.setProperty('--accent', this.props.accent);
+    if(this.props.roundness!=null) el.style.setProperty('--r', this.props.roundness+'px'); }
+  nav(k){ const main=['home','categories','wishlist','cart','profile'];
+    this.setState(s=>({ screen:k, filtersOpen:false, tab: main.includes(k)? k : s.tab })); }
+  toggleWish(n){ this.setState(s=>({ wish:{...s.wish,[n]:!s.wish[n]} })); }
+  inc(n){ this.setState(s=>({ qty:{...s.qty,[n]:(s.qty[n]||1)+1} })); }
+  dec(n){ this.setState(s=>({ qty:{...s.qty,[n]:Math.max(1,(s.qty[n]||1)-1)} })); }
+  applyCoupon(){ this.setState({couponApplied:true}); }
+  tog(k){ this.setState(s=>({ [k]:!s[k] })); }
+
+  renderVals(){
+    const S=this.state, s=S.screen;
+    const go=k=>()=>this.nav(k);
+    const fmt=n=>'₹'+Number(n).toLocaleString('en-IN');
+    const tones=['#E8E4DB','#E2DBD0','#ECE7DF','#DDD6CA','#E4DED3','#EBE6DC','#DFD8CC','#E6E0D5','#E3DDD2','#EAE5DB'];
+    const raw=[
+      {n:'Silk Wrap Dress',b:'ANDRÓ ATELIER',p:8990,m:12990,o:31,r:4.8},
+      {n:'Cashmere Overcoat',b:'ANDRÓ HERITAGE',p:18990,m:24990,o:24,r:4.9},
+      {n:'Tailored Wool Blazer',b:'ANDRÓ FORMAL',p:11990,m:15990,o:25,r:4.7},
+      {n:'Pleated Midi Skirt',b:'ANDRÓ STUDIO',p:4990,m:6990,o:29,r:4.6},
+      {n:'Linen Resort Shirt',b:'ANDRÓ CASUAL',p:3490,m:4990,o:30,r:4.5},
+      {n:'Leather Loafers',b:'ANDRÓ MILANO',p:9990,m:13990,o:28,r:4.8},
+      {n:'Merino Knit Sweater',b:'ANDRÓ KNITS',p:6490,m:8990,o:27,r:4.7},
+      {n:'Structured Tote',b:'ANDRÓ MILANO',p:12990,m:16990,o:23,r:4.9},
+      {n:'Silk Scarf',b:'ANDRÓ HERITAGE',p:2990,m:3990,o:25,r:4.6},
+      {n:'Wide-Leg Trousers',b:'ANDRÓ STUDIO',p:5490,m:7490,o:27,r:4.5}
+    ];
+    const wished=n=>!!S.wish[n];
+    const products=raw.map((x,i)=>({ ...x, tone:tones[i%tones.length],
+      pf:fmt(x.p), mf:fmt(x.m), offt:x.o+'% OFF', rt:x.r.toFixed(1),
+      wcolor: wished(x.n)?'#9C7A2C':'#17150F', wfill: wished(x.n)?1:0,
+      onWish:(e)=>{ if(e&&e.stopPropagation)e.stopPropagation(); this.toggleWish(x.n); },
+      onOpen:()=>this.nav('pdp') }));
+    const byName=n=>products.find(p=>p.n===n);
+
+    const onb=[
+      {t:'Premium Fashion', d:'Curated collections from world-class ateliers, delivered with quiet luxury.', ic:'diamond'},
+      {t:'Try at Home', d:'Handpick up to 10 pieces and try them in the comfort of home before you buy.', ic:'checkroom'},
+      {t:'Fast Delivery', d:'Same-day dispatch from your nearest boutique, right on your schedule.', ic:'local_shipping'},
+      {t:'Store Availability', d:'See live inventory across nearby ANDRÓ boutiques as you browse.', ic:'storefront'}
+    ];
+    const cur=onb[S.onb];
+
+    const cartNames=['Silk Wrap Dress','Tailored Wool Blazer','Merino Knit Sweater'];
+    const cartItems=cartNames.map(n=>{ const p=byName(n); const q=S.qty[n]||1;
+      return { ...p, q, lt:fmt(p.p*q), inc:()=>this.inc(n), dec:()=>this.dec(n) }; });
+    const subtotalN=cartItems.reduce((a,c)=>a+c.p*c.q,0);
+    const deliveryN= subtotalN>7999?0:199;
+    const mrpN=cartItems.reduce((a,c)=>a+c.m*c.q,0);
+
+    const pdp=byName('Silk Wrap Dress');
+    const pdpThumbs=tones.slice(0,4).map((t,i)=>({ tone:t, active:i===S.pdpImg, br:i===S.pdpImg?'2px solid #17150F':'2px solid transparent', onClick:()=>this.setState({pdpImg:i}) }));
+    const pdpMain=pdpThumbs[S.pdpImg].tone;
+    const pdpSizes=['XS','S','M','L','XL'].map(l=>({ l, bg:l===S.pdpSize?'#17150F':'#fff', col:l===S.pdpSize?'#fff':'#57534B', bd:l===S.pdpSize?'#17150F':'#ECE8E0', onClick:()=>this.setState({pdpSize:l}) }));
+    const pdpColors=['#3A3A38','#8A6E4B','#B7B2A6','#5B6B5E'].map((t,i)=>({ t, ring:i===S.pdpColor?'0 0 0 2px #fff,0 0 0 4px var(--accent)':'0 0 0 1px #E4E0D7', onClick:()=>this.setState({pdpColor:i}) }));
+
+    const cats=[
+      {n:'Men',ic:'man'},{n:'Women',ic:'woman'},{n:'Kids',ic:'child_care'},
+      {n:'Ethnic Wear',ic:'checkroom'},{n:'Formal Wear',ic:'apparel'},{n:'Casual Wear',ic:'styler'},
+      {n:'Footwear',ic:'footprint'},{n:'Accessories',ic:'diamond'}
+    ].map((c,i)=>({ ...c, tone:tones[i%tones.length], c:(400+i*180)+' styles', onClick:()=>this.nav('listing') }));
+
+    const sorts=['Popular','Newest','Price: Low to High','Price: High to Low'].map(l=>({ l, active:l===S.sort, bg:l===S.sort?'#F0E8D6':'#fff', onClick:()=>this.setState({sort:l}) }));
+    const oTabs=['Active','Delivered','Cancelled','Try at Home'].map(l=>({ l, active:l===S.orderTab, col:l===S.orderTab?'#17150F':'#97938A', bb:l===S.orderTab?'2px solid #17150F':'2px solid transparent', onClick:()=>this.setState({orderTab:l}) }));
+
+    const wishItems=products.filter(p=>S.wish[p.n]);
+
+    const coupons=[
+      {code:'ANDRO40',t:'40% off Premium Coats',d:'Min. spend ₹9,999 · The Autumn Edit',save:'Save up to ₹8,000'},
+      {code:'WELCOME15',t:'Flat 15% off first order',d:'For new members · Max ₹2,500',save:'Save ₹2,500'},
+      {code:'GOLD500',t:'₹500 off for Gold members',d:'No minimum spend',save:'Save ₹500'}
+    ];
+    const revFilters=['All','5 ★','4 ★','With Photos'].map(l=>({ l, active:l===S.revFilter, bg:l===S.revFilter?'#17150F':'#fff', col:l===S.revFilter?'#fff':'#57534B', bd:l===S.revFilter?'#17150F':'#ECE8E0', onClick:()=>this.setState({revFilter:l}) }));
+    const tog=v=>({ bg:v?'var(--accent)':'#E4E0D7', x:v?'20px':'2px' });
+    const pushTog=tog(S.push), offersTog=tog(S.offers), darkTog=tog(S.dark);
+
+    const navRaw=[
+      {k:'home',ic:'home',l:'Home'},{k:'categories',ic:'grid_view',l:'Categories'},
+      {k:'wishlist',ic:'favorite',l:'Wishlist'},{k:'cart',ic:'shopping_bag',l:'Cart'},
+      {k:'profile',ic:'person',l:'Profile'}
+    ];
+    const navItems=navRaw.map(it=>({ ...it, active:S.tab===it.k,
+      bg:S.tab===it.k?'#F0E8D6':'transparent', col:S.tab===it.k?'#17150F':'#9B968C', fill:S.tab===it.k?1:0,
+      onClick:()=>this.nav(it.k) }));
+
+    const pays=[
+      {k:'upi',ic:'account_balance_wallet',t:'UPI',d:'GPay · PhonePe · Paytm'},
+      {k:'card',ic:'credit_card',t:'Credit / Debit Card',d:'Visa, Mastercard, Amex'},
+      {k:'net',ic:'account_balance',t:'Net Banking',d:'All major banks'},
+      {k:'cod',ic:'payments',t:'Cash on Delivery',d:'Pay when it arrives'}
+    ].map(x=>({ ...x, sel:S.pay===x.k, bd:S.pay===x.k?'var(--accent)':'#ECE8E0', dot:S.pay===x.k?'radio_button_checked':'radio_button_unchecked', dcol:S.pay===x.k?'var(--accent)':'#C4BFB4', onClick:()=>this.setState({pay:x.k}) }));
+
+    const tryDates=['Wed 8','Thu 9','Fri 10','Sat 11'].map((l,i)=>({ l:l.split(' ')[0], d:l.split(' ')[1], active:i===S.tryDate, bg:i===S.tryDate?'#17150F':'#fff', col:i===S.tryDate?'#fff':'#57534B', bd:i===S.tryDate?'#17150F':'#ECE8E0', onClick:()=>this.setState({tryDate:i}) }));
+    const trySlots=['10 – 12','12 – 2','2 – 4','4 – 6','6 – 8'].map((l,i)=>({ l:l+' PM', active:i===S.tryTime, bg:i===S.tryTime?'#17150F':'#fff', col:i===S.tryTime?'#fff':'#57534B', bd:i===S.tryTime?'#17150F':'#ECE8E0', onClick:()=>this.setState({tryTime:i}) }));
+    const tryItems=[byName('Silk Wrap Dress'),byName('Tailored Wool Blazer')];
+
+    return {
+      frameRef:this.frameRef,
+      showStatus: s!=='splash',
+      isSplash:s==='splash',isOnb:s==='onboarding',isLogin:s==='login',isOtp:s==='otp',
+      isHome:s==='home',isCat:s==='categories',isList:s==='listing',isPdp:s==='pdp',
+      isCart:s==='cart',isCheckout:s==='checkout',isSuccess:s==='success',isWish:s==='wishlist',
+      isTry:s==='tryhome',isOrders:s==='orders',isTrack:s==='tracking',isNotif:s==='notifications',
+      isProfile:s==='profile',isSearch:s==='search',
+      showNav:['home','categories','listing','wishlist','profile'].includes(s),
+      navItems, navLabels: this.props.navLabels!==false,
+      filtersOpen:S.filtersOpen, openFilters:()=>this.setState({filtersOpen:true}), closeFilters:()=>this.setState({filtersOpen:false}),
+      goSplash:go('splash'),goOnb:go('onboarding'),goLogin:go('login'),goOtp:go('otp'),goHome:go('home'),goCat:go('categories'),goList:go('listing'),goPdp:go('pdp'),goCart:go('cart'),goCheckout:go('checkout'),goSuccess:go('success'),goWish:go('wishlist'),goTry:go('tryhome'),goOrders:go('orders'),goTrack:go('tracking'),goNotif:go('notifications'),goProfile:go('profile'),goSearch:go('search'),
+      goCoupons:go('coupons'),goReviews:go('reviews'),goHelp:go('help'),goSettings:go('settings'),goAddresses:go('addresses'),goAddressForm:go('addressForm'),goStates:go('states'),goComponents:go('components'),
+      goEmptyCart:go('emptyCart'),goNoOrders:go('noOrders'),goNoResults:go('noResults'),goOffline:go('offline'),goPayFailed:go('payFailed'),goServerError:go('serverError'),goSessionExpired:go('sessionExpired'),
+      goSkHome:go('skHome'),goSkList:go('skList'),goSkPdp:go('skPdp'),goSkCart:go('skCart'),
+      isCoupons:s==='coupons',isReviews:s==='reviews',isHelp:s==='help',isSettings:s==='settings',isAddresses:s==='addresses',isAddressForm:s==='addressForm',isStates:s==='states',isComponents:s==='components',
+      isEmptyCart:s==='emptyCart',isNoOrders:s==='noOrders',isNoResults:s==='noResults',isOffline:s==='offline',isPayFailed:s==='payFailed',isServerError:s==='serverError',isSessionExpired:s==='sessionExpired',
+      isSkHome:s==='skHome',isSkList:s==='skList',isSkPdp:s==='skPdp',isSkCart:s==='skCart',
+      coupons, couponApplied:S.couponApplied, applyCoupon:()=>this.applyCoupon(),
+      revFilters, pushTog, offersTog, darkTog,
+      togPush:()=>this.tog('push'), togOffers:()=>this.tog('offers'), togDark:()=>this.tog('dark'),
+      onbTitle:cur.t,onbDesc:cur.d,onbIcon:cur.ic,onbBtn:S.onb<3?'Continue':'Get Started',
+      onbNext:()=> S.onb<3? this.setState(x=>({onb:x.onb+1})) : this.nav('login'),
+      onbSkip:()=>this.nav('login'),
+      dw0:S.onb===0?'22px':'6px',dw1:S.onb===1?'22px':'6px',dw2:S.onb===2?'22px':'6px',dw3:S.onb===3?'22px':'6px',
+      dc0:S.onb===0?'var(--accent)':'#E4E0D7',dc1:S.onb===1?'var(--accent)':'#E4E0D7',dc2:S.onb===2?'var(--accent)':'#E4E0D7',dc3:S.onb===3?'var(--accent)':'#E4E0D7',
+      products, newArrivals:products.slice(0,6), trending:products.slice(3,9), premium:products.slice(1,5), recommended:products.slice(2,8), recent:products.slice(5,10), similar:products.slice(4,8),
+      cats, sorts, oTabs, pays, tryDates, trySlots, tryItems,
+      cartItems, cartCount:cartItems.length, subtotal:fmt(subtotalN), delivery: deliveryN?fmt(deliveryN):'FREE', total:fmt(subtotalN+deliveryN), saved:fmt(mrpN-subtotalN),
+      pdp, pdpThumbs, pdpMain, pdpSizes, pdpColors,
+      wishItems, wishCount:wishItems.length, wishEmpty:wishItems.length===0
+    };
+  }
+}
+</script>
+
+
+</body></html>

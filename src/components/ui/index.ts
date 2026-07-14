@@ -1,5 +1,8 @@
 export { Text } from './text';
+export { Icon } from './icon';
 export { Button } from './button';
+export { PressableScale } from './pressable-scale';
+export { Toggle } from './toggle';
 export { Input } from './input';
 export { Card } from './card';
 export { Badge } from './badge';

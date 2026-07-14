@@ -15,7 +15,7 @@ type AuthState = {
   user: AuthUser | null;
   /** Read persisted tokens/user on app start; resolves the initial auth gate. */
   hydrate: () => Promise<void>;
-  /** Persist a real session after login/register succeeds. */
+  /** Persist a real session after OTP verify succeeds (tokens + the account, incl. its role). */
   setSession: (tokens: TokenPair, user: AuthUser) => Promise<void>;
   signOut: () => Promise<void>;
 };

@@ -9,10 +9,10 @@ export function useCart() {
   return useQuery({ queryKey: cartKeys.root, queryFn: fetchCart });
 }
 
-/** Total quantity across cart lines — drives the Cart tab badge. */
+/** Total quantity in the cart — drives the Cart tab badge. */
 export function useCartCount(): number {
   const { data } = useCart();
-  return data?.items.reduce((sum, item) => sum + item.quantity, 0) ?? 0;
+  return data?.totals.count ?? 0;
 }
 
 export function useAddToCart() {

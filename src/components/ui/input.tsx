@@ -1,51 +1,48 @@
-import { forwardRef } from 'react';
-import {
-  StyleSheet,
-  TextInput,
-  type TextInputProps,
-  useColorScheme,
-  View,
-} from 'react-native';
+import { forwardRef, useState } from 'react';
+import { StyleSheet, TextInput, type TextInputProps, View } from 'react-native';
 
 import { colors } from '@/theme/colors';
 import { radii, spacing } from '@/theme/tokens';
+import { fontFamily } from '@/theme/typography';
 import { Text } from './text';
 
 type Props = TextInputProps & {
+  /** Eyebrow label above the field (uppercase, tracked — design style). */
   label?: string;
   /** Validation message shown below the field. */
   error?: string;
 };
 
-/** Labeled text input with an error state. Pair with react-hook-form's `Controller`. */
+/** ANDRÓ boxed text input — ink border on focus, uppercase eyebrow label, error state. */
 export const Input = forwardRef<TextInput, Props>(function Input(
-  { label, error, style, ...rest },
+  { label, error, style, onFocus, onBlur, ...rest },
   ref,
 ) {
-  useColorScheme();
+  const [focused, setFocused] = useState(false);
+  const borderColor = error ? colors.danger : focused ? colors.borderStrong : colors.border;
   return (
     <View style={styles.wrapper}>
       {label ? (
-        <Text variant="caption" muted>
+        <Text size={11} track={0.12} uppercase color={colors.muted2}>
           {label}
         </Text>
       ) : null}
       <TextInput
         ref={ref}
-        placeholderTextColor={colors.secondaryLabel}
-        style={[
-          styles.input,
-          {
-            backgroundColor: colors.surface,
-            color: colors.label,
-            borderColor: error ? colors.danger : colors.border,
-          },
-          style,
-        ]}
+        placeholderTextColor={colors.muted2}
+        onFocus={(e) => {
+          setFocused(true);
+          onFocus?.(e);
+        }}
+        onBlur={(e) => {
+          setFocused(false);
+          onBlur?.(e);
+        }}
+        style={[styles.input, { borderColor, color: colors.label }, style]}
         {...rest}
       />
       {error ? (
-        <Text variant="caption" color={colors.danger}>
+        <Text size={12} color={colors.danger}>
           {error}
         </Text>
       ) : null}
@@ -54,13 +51,14 @@ export const Input = forwardRef<TextInput, Props>(function Input(
 });
 
 const styles = StyleSheet.create({
-  wrapper: { gap: spacing.xs },
+  wrapper: { gap: spacing.sm },
   input: {
-    minHeight: 48,
+    height: 56,
     borderRadius: radii.md,
     borderCurve: 'continuous',
-    borderWidth: StyleSheet.hairlineWidth,
-    paddingHorizontal: spacing.md,
-    fontSize: 17,
+    borderWidth: 1.5,
+    paddingHorizontal: spacing.lg,
+    fontSize: 16,
+    fontFamily: fontFamily.sansMedium,
   },
 });

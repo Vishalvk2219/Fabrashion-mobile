@@ -1,12 +1,21 @@
-# Feature: `checkout` (planned — backend Phase 4)
+﻿# Feature: `checkout`
 
-Turns the cart into a paid order via PhonePe.
+Turns the server cart into an order. Backend: `fabrashion-backend/src/modules/checkout`.
 
-## Flow (per `plans/00-system-design.md` §4.1)
-1. `POST /checkout { addressId }` → creates a `PENDING` order, **reserves stock**, returns a payment intent. Idempotent.
-2. Launch the PhonePe SDK checkout sheet (native module — needs a **dev build**, not Expo Go).
-3. App polls `GET /payments/:orderId/status`; the backend also reconciles via the S2S webhook. Both converge on `markOrderPaid`.
-4. Success → `checkout/success`; failure/timeout → reservation released.
+## Pieces
+| File | Purpose |
+|------|---------|
+| `api.ts` | `placeOrder(addressId)` â†’ `POST /checkout`; `confirmOrderDev(id)` â†’ `POST /orders/:id/confirm-dev`. |
+| `hooks.ts` | `useCheckout` (invalidates cart + orders on success), `useConfirmOrderDev`. |
 
-## Status
-Not implemented yet — needs backend Phase 4 endpoints and the PhonePe RN SDK + EAS dev build. Screens (`app/checkout/*`) land with that phase.
+## Flow (`app/checkout.tsx`)
+1. Pick the default saved address (`features/address` â†’ `useDefaultAddress`; "Change" â†’ `/addresses`).
+2. `useCheckout(address.id)` â†’ the server reserves stock, creates a **PENDING** order, converts the cart.
+3. **DEV:** `useConfirmOrderDev(order.id)` stands in for the PhonePe capture â†’ **PAID**. Then
+   `payment-success?orderId=â€¦`.
+4. **Prod (phase 4c):** step 3 becomes the PhonePe SDK sheet + the server's verified capture webhook â€”
+   both hit the same idempotent `markOrderPaid`. Needs merchant creds + an EAS dev build (not Expo Go).
+
+## Notes
+Totals shown are the server cart totals (`features/cart` â†’ `useCart`); the client never sums money.
+Payment-method chips are presentational until 4c. Endpoints: `checkout`, `orders.confirmDev`.

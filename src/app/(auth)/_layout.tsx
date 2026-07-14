@@ -1,8 +1,16 @@
 import { Stack } from 'expo-router/stack';
 
-/** Land unauthenticated users on the login screen. */
-export const unstable_settings = { anchor: 'login' };
+import { colors } from '@/theme';
 
+/** First-run brand flow: index redirects to splash (or straight to login if already onboarded). */
 export default function AuthLayout() {
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: colors.background },
+        animation: 'fade',
+      }}
+    />
+  );
 }

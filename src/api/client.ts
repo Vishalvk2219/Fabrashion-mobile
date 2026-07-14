@@ -33,6 +33,8 @@ export function setOnAuthExpired(cb: (() => void) | null): void {
   onAuthExpired = cb;
 }
 
+// `axios.create` is the canonical instance factory; the named-export lint hint doesn't apply.
+// eslint-disable-next-line import/no-named-as-default-member
 export const apiClient = axios.create({
   baseURL: env.apiUrl,
   timeout: 15000,
@@ -47,6 +49,7 @@ apiClient.interceptors.request.use(async (config: InternalAxiosRequestConfig) =>
 });
 
 // A bare client (no interceptors) for the refresh call itself, to avoid recursion.
+// eslint-disable-next-line import/no-named-as-default-member
 const refreshClient = axios.create({ baseURL: env.apiUrl, timeout: 15000 });
 let refreshPromise: Promise<string> | null = null;
 

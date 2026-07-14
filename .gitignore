@@ -38,8 +38,14 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# design reference: keep the decoded template + build inputs, ignore the 1MB raw bundle
+design/*.bundle.html
+
 example
 
 # generated native folders
 /ios
 /android
+
+
+.env

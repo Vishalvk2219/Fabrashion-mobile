@@ -1,19 +1,23 @@
-# Feature: `cart`
+﻿# Feature: `cart`
 
-The active cart with server-computed totals.
-
-## Screens
-- `app/(tabs)/(cart)/index.tsx` — cart contents + totals.
+The **server cart** â€” auth-required, server-authoritative on totals and stock. The React Query cache
+**is** the cart; there is no local store. Backend: `fabrashion-backend/src/modules/cart`.
 
 ## Pieces
 | File | Purpose |
 |------|---------|
-| `schema.ts` | `Cart`, `CartItem`, `AddCartItemInput` types. |
-| `api.ts` | `fetchCart`, `addCartItem`, `updateCartItem`, `removeCartItem`. |
-| `hooks.ts` | `useCart`, `useCartCount` (tab badge), `useAddToCart`, `useUpdateCartItem`, `useRemoveCartItem`. |
+| `schema.ts` | `Cart { id, lines, totals }`, `CartLine`, `CartTotals` â€” mirror the backend DTO. |
+| `api.ts` | `fetchCart`, `addCartItem`, `updateCartItem`, `removeCartItem` (each returns the whole cart). |
+| `hooks.ts` | `useCart`, `useCartCount` (badge), `useAddToCart`, `useUpdateCartItem`, `useRemoveCartItem`. Mutations write the returned cart back into the cache. |
 
-## Endpoints (backend Phase 4 — not live yet)
-`GET /cart`, `POST /cart/items`, `PATCH /cart/items/:id`, `DELETE /cart/items/:id`.
+## Flow
+- **PDP** (`app/product/[id]`) resolves the selected size+colour to a `variantId` (from
+  `CatalogItem.variants`) and calls `useAddToCart` â€” disabled for preview items / out of stock.
+- **Cart screen** (`app/(tabs)/(cart)`) renders server `lines` + server `totals`; qty steppers hit
+  `useUpdateCartItem` (0 removes), delete hits `useRemoveCartItem`.
+- **Wishlist** "Move to Bag" resolves a variant and adds.
 
 ## Notes
-- **Server is authoritative on totals** — the app never sums money. Mutations return the full recomputed cart, written straight into the query cache.
+Prices are integer **paise**, formatted via `lib/money`. Totals (GST broken out, flat/free shipping)
+are computed by the server â€” never client-side. `availableQty` on each line caps the qty stepper.
+Endpoints in `api/endpoints.ts` (`cart.*`). `GET /cart`, `POST /cart/items`, `PATCH`/`DELETE /cart/items/:id`.

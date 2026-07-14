@@ -1,22 +1,35 @@
-import type { ProductVariant } from '@/features/catalog/schema';
-
-/** A line in the server cart. Totals are server-computed — never derived on the app. */
-export type CartItem = {
-  id: string;
+/** Server cart — mirrors the backend `cart` module DTO. Totals are server-computed; never derived. */
+export type CartLine = {
+  itemId: string;
+  productId: string;
   variantId: string;
-  quantity: number;
-  variant?: Pick<ProductVariant, 'id' | 'sku' | 'size' | 'colorName' | 'pricePaise' | 'mrpPaise'> & {
-    productName?: string;
-    imageUrl?: string | null;
-  };
+  name: string;
+  brand: string | null;
+  size: string;
+  colorName: string;
+  colorHex: string | null;
+  imageUrl: string | null;
+  pricePaise: number;
+  mrpPaise: number;
+  qty: number;
+  /** Live online availability for this variant. */
+  availableQty: number;
+  lineTotalPaise: number;
+};
+
+export type CartTotals = {
+  count: number;
+  subtotalPaise: number;
+  discountPaise: number;
+  taxPaise: number;
+  shippingPaise: number;
+  totalPaise: number;
 };
 
 export type Cart = {
   id: string;
-  items: CartItem[];
-  subtotalPaise: number;
-  shippingPaise: number;
-  totalPaise: number;
+  lines: CartLine[];
+  totals: CartTotals;
 };
 
 export type AddCartItemInput = { variantId: string; quantity: number };
