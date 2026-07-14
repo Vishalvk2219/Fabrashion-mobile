@@ -1,6 +1,6 @@
 # fabrashion-mobile
 
-Customer mobile app for the e-commerce platform — **React Native + Expo (SDK 57) + TypeScript**,
+Customer mobile app for the Fabrashion platform — **React Native + Expo (SDK 57) + TypeScript**,
 file-based routing with **Expo Router**. Talks to `fabrashion-backend` over REST (`/api/v1`).
 
 Design docs live in `../plans/` (start with `plans/README.md`, `plans/04-frontend-structure.md`,
